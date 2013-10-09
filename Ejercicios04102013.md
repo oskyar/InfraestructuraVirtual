@@ -7,6 +7,8 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
 +   Empezamos creando el grupo para mi usuario con la orden **cgcreate**:
     
         sudo cgcreate -a oskyar -g memory,cpu,cpuacct:ejercicio7
+        
+        sudo cgcreate -a oskyar -g memory,cpu,cpuacct:reproductorMusica
 
     
     Ahora hemos creado un grupo llamado *ejercicio7* que se va a encargar de controlar la memoria, CPU y de contabilizar el uso de los recursos de la CPU además de dar permiso al usuario ***oskyar*** para poder trabajar con él. 
@@ -19,9 +21,11 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
     
 +   Seguidamente ejecutámos las órdenes con **cgexec** de los subgrupos para asignarle los procesos.
 
-        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox &
-        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit &
-        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/reproductorMusica rhythmbox &
+        sudo cgexec -g memory,cpu,cpuacct:reproductorMusica
+
+        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/reproductorMusica rhythmbox
         
 +   Ahora podremos visualizar los resultados accediendo a la carpeta 
 */sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|reproductorMusica)*
