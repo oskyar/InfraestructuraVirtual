@@ -1,4 +1,3 @@
-
 ### Ejercicio 7
 
 > 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
@@ -18,11 +17,22 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
         sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
         sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/reproductorMusica
     
-+   Seguidamente ejecutámos las órdenes con **cgexec** de los grupos para asignar a los procesos un subgrupo
++   Seguidamente ejecutámos las órdenes con **cgexec** de los subgrupos para asignarle los procesos.
 
-        cgexec -g memory,cpu,cpuacct:ejercicio7/navegador google-chrome &
+        sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox &
         sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit &
         sudo cgexec -g memory,cpu,cpuacct:ejercicio7/reproductorMusica rhythmbox &
+        
++   Ahora podremos visualizar los resultados accediendo a la carpeta 
+*/sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|reproductorMusica)*
+
++   Tabla comparativa entre los procesos:
+
+| Proceso | Memoria | CPU | Cpuacct |
+| :-----: | :-----: | :-: | :-----: |
+|  *Firefox* |   |   |
+|  *Gedit* |   |   |
+|  *Rhythmbox* |   |   |
     
 > 2. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
