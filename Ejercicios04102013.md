@@ -64,8 +64,3 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
 
 Con esta aproximación vemos que el reproductor de música frente al editor y navegador necesita más uso de CPU para un mismo tiempo de uso.
 
-
-    
-    
-> 2) Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
-
