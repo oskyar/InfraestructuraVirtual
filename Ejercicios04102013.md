@@ -7,8 +7,6 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
 +   Empezamos creando el grupo para mi usuario con la orden **cgcreate**:
     
         sudo cgcreate -a oskyar -g memory,cpu,cpuacct:ejercicio7
-        
-        sudo cgcreate -a oskyar -g memory,cpu,cpuacct:reproductorMusica
 
     
     Ahora hemos creado un grupo llamado *ejercicio7* que se va a encargar de controlar la memoria, CPU y de contabilizar el uso de los recursos de la CPU además de dar permiso al usuario ***oskyar*** para poder trabajar con él. 
