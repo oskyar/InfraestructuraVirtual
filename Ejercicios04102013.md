@@ -1,4 +1,10 @@
+Tabla de contenidos
++ [Ejercicio 7](#ejercicio7)
++ [Ejercicio 8](#ejercicio8)
+
+
 ### Ejercicio 7
+{#ejercicio7}
 
 > 1) Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
@@ -62,3 +68,6 @@ Vamos a utilizar el paquete cgroup-bin ya que nos facilita las cosas.
 
 Con esta aproximación vemos que el reproductor de música frente al editor y navegador necesita más uso de CPU para un mismo tiempo de uso.
 
+
+### Ejercicio 8
+{#ejercicio8}
