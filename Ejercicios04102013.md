@@ -121,5 +121,6 @@ Ejemplo /etc/cgrules.conf:
 
 
 Ahora procederíamos a reiniciar los servicios para que éstos utilizaran la nueva configuración. (Como ya puse arriba).
+
     service cgconfig restart
     service cgred restart
