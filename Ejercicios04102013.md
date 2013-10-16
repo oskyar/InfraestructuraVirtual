@@ -1,10 +1,5 @@
-Tabla de contenidos
-+ [Ejercicio 7](#ejercicio7)
-+ [Ejercicio 8](#ejercicio8)
-
-
 ### Ejercicio 7
-{#ejercicio7}
+
 
 > 1) Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
@@ -70,4 +65,61 @@ Con esta aproximación vemos que el reproductor de música frente al editor y na
 
 
 ### Ejercicio 8
-{#ejercicio8}
+
+> 2) Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+La configuración se realiza mediante la edición de los dos archivos siguientes:
+
+    /etc/cgconfig.conf
+    Utilizado por libcgroup para definir los grupos de control, sus parámetros y puntos de montaje.
+
+    /etc/cgrules.conf
+    Utilizado por libcgroup para definir los grupos de control a la que pertenece el proceso.
+
+A continuación , se inicia el gestor de carga de trabajo y el demonio de reglas:
+
+    service cgconfig restart
+    service cgred restart
+    + El encargado de la carga de trabajo (cgconfig) es el responsable de la asignación de la Recursos.
+
+También se puede hacer de manera permanente mediante los archivos anteriores o en el momento mediante las siguientes órdenes:
+
+Añade un nuevo proceso para el administrador.
+    
+    cgexec [- g <controladores> : <path> ] comando [argumentos ]
+
+Añade un proceso que ya se está ejecutando con el administrador:
+    
+    cgclassify [- g <controladores> : <ruta> ] <pidlist>
+
+O de forma automática sobre el archivo cgrules.conf y el "Demonio de las Reglas cgroup (cgred), lo que obliga a todos los procesos recién generados a entrar en el grupo especificado.
+    
+    Ejemplo /etc/cgconfig.conf:
+
+    group usuario {
+        cpu {
+            cpu.shares = 300;
+        }
+    }
+
+    group root {
+        cpu {
+            cpu.shares = 700;
+        }
+    }
+    
+    mount {
+        cpu = /dev/cgroups/cpu;
+        cpuacct = /dev/cgroups/cpuacct;
+    }
+    
+Ejemplo /etc/cgrules.conf:
+
+    #<usuario/grupo>    <controlador(es)>    <cgroup>
+    oskyar                      cpu           usuario
+    root                        cpu            root
+
+
+Ahora procederíamos a reiniciar los servicios para que éstos utilizaran la nueva configuración. (Como ya puse arriba).
+    service cgconfig restart
+    service cgred restart
