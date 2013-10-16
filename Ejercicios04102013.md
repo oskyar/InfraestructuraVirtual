@@ -124,3 +124,25 @@ Ahora procederíamos a reiniciar los servicios para que éstos utilizaran la nue
 
     service cgconfig restart
     service cgred restart
+
+
+### Ejercicio 9
+
+> Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+** Modelo del procesador: **
+
+Mi portátil es el [Asus M60VP](http://www.asus.com/Notebooks_Ultrabooks/M60Vp)
+Por lo tanto el modelo del procesador es: [Intel(R) Core(TM) 2 Duo CPU  P8700 @ 2.53Ghz] (http://ark.intel.com/products/37006/)
+
+** En la salida aparece lo siguiente: ** 
+
+![captura1](https://dl.dropboxusercontent.com/u/3216105/virtualizacion%20procesador%20m60vp.png)
+
+
+**[Características del microprocesador](http://ark.intel.com/products/37006/)**
+
+![captura2](https://dl.dropboxusercontent.com/u/3216105/Caracteristicas%20procesador%20m60vp.png)
+
+
+
