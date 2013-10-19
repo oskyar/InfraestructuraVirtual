@@ -1,3 +1,5 @@
+### [Ejercicios del 1-6] (https://github.com/oskyar/InfraestructuraVirtual/blob/master/Ejercicios30092013.md)
+
 ### Ejercicio 7
 
 
