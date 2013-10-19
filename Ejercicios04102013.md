@@ -1,3 +1,5 @@
+### [Ejercicios del 1-2] (https://github.com/oskyar/InfraestructuraVirtual/blob/master/Ejercicios30092013.md)
+
 ### Ejercicio 7
 
 
@@ -145,3 +147,5 @@ Por lo tanto el modelo del procesador es: [Intel(R) Core(TM) 2 Duo CPU  P8700 @ 
 ![captura2](https://dl.dropboxusercontent.com/u/3216105/Caracteristicas%20procesador%20m60vp.png)
 
 
+
+### [Ejercicios del 10-14](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Ejercicios07102013.md)

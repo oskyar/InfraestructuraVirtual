@@ -278,3 +278,5 @@ Sabemos que un año tiene 8.760 horas (si no es bisiesto y suponiendo que no lo 
 
 Observamos que utilizar servidores virtualizados es una opción mucho más económica cuando no se va a dar un uso intensivo al servidor.
 
+
+### [Ejercicios del 7-9](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Ejercicios04102013.md)

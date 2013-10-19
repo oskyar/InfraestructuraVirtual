@@ -1,3 +1,4 @@
+### [Ejercicios del 7-9](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Ejercicios04102013.md)
 
 ### Ejercicio 10
 
