@@ -1,9 +1,0 @@
-# Ejercicio1
-------------
-
-* Primero creamos la carpeta 
-
-	sudo unshare -m /bin/bash
-	sudo mkdir /mnt/disk
-	sudo mount -o loop -t iso9660 ~/Dropbox/UNIVERSIDAD/Ingeniería/1º/Aprobadas/TC1/Programa/LogicWorks\ 5.iso /mnt/disk
-
