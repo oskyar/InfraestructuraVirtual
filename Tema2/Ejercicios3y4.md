@@ -85,12 +85,19 @@
 
 		sudo apt-get install nano
 
-+ Cremamos un archivo y lo ejecutamos con nano.
+![instalando nano](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-InstalandoNano.png)
+
++ Creamos un archivo, lo ejecutamos con nano y lo modificamos.
 
 		sudo nano archivo.txt 
 
-+ Modificamos el archivo y con la siguiente orden vemos el contenido.
+![Creando y modificando archivo con nano](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-CreandoArchivoConNano.png)
+
++ Lo guardamos (Ctrl + O), salimos (Ctrl + X) y con la siguiente orden vemos el contenido.
 
 		cat archivo.txt
+
+![Creando y modificando archivo con nano](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-MostrandoArchivoCreado.png)
+
 
 Y con esto ya habríamos probado a instalar aplicaciones dentro de una jaula.
