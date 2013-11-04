@@ -3,11 +3,11 @@
 
 * Primero creamos un namespace con mount (*la opción -m*). 
 
-	sudo unshare -m /bin/bash
+		sudo unshare -m /bin/bash
 
 * Se crea el directorio donde queremos montar la iso.
 
-	sudo mkdir /mnt/disk
+		sudo mkdir /mnt/disk
 
 *Se monta la ISO con las siguientes opciones.
 
