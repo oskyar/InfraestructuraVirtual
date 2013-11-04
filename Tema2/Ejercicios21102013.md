@@ -20,7 +20,7 @@
 1. Mostrar los puentes configurados en el sistema operativo.
 	Por defecto no hay ningún puente configurado en el sistema operativo, pero como he estado siguiendo los ejemplos y creando nuevos, me aparece alcantara.
 
-![captura2]()
+![captura2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/ejercicio%202%20a%29.png)
 
 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
@@ -33,4 +33,4 @@
 	Aunque a mi la wlan0 me da error... a la eth0 se puede añadir sin problemas, a no ser que tengas asignado un 
 	puente ya a esa interfaz.
 	
-![captura3]()
+![captura3](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/ejercicio%202%20b%29.png)
