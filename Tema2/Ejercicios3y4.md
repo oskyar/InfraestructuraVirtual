@@ -1,4 +1,4 @@
-### [Ejercicios 1 y 2](https://github.com/oskyar/InfraestructuraVirtual/edit/master/Tema2/Ejercicios1y2.md)
+### [Ejercicios 1 y 2](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios1y2.md)
 
 
 # Ejercicio3
