@@ -15,7 +15,7 @@ comenzará a descargarnos el sistema minimal de Ubuntu (Saucy - Ubuntu 13.10)
 
 ![captura1](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio%203%20a%29%20.png)
 
-Y ahora observamos que hay dentro del directorio /home/jaulas/saucy
+Y ahora observamos que hay dentro del directorio */home/jaulas/saucy*
 
 ![captura2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio%203%20a%29%202.png)
 
