@@ -35,3 +35,53 @@ Y ahora observamos que hay dentro del directorio */home/jaulas/saucy*
 
 ![captura4](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio%203%20b%29%202.png)
 
+
+# Ejercicio4
+------------
+
+> ### Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
+
+	+ El sistema Ubuntu es un sistema basado en Debian por lo que el primer apartado ya lo tendríamos completado.
+
+	+ Primero de todo sería entrar a la jaula con:
+
+		sudo chroot /home/jaulas/saucy
+
+	+ Y tendremos:
+
+![captura chroot](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-chroot-jaula-saucy.png)
+
+	+ Pruebo a montar el proc para poder utilizar la orden top para ver los procesos.
+
+		Vemos que de primeras utilizamos *top* y nos da error. Lo montamos y ejecutamos de nuevo top a ver qué sucede.
+
+		Montar /proc
+
+			$ mount -t proc proc /proc
+
+
+![MontandoProc](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-montandoProc.png)
+
+	+ Instalando los paquetes de idiomas para que no tengamos problemas al utilizar los programas.
+
+		$ sudo apt-get install language-pack-es
+
+	+Se descarga y dejamos que se instale y configure solo.
+
+![InstalandoIdiomas]((https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio4-instalandoIdiomas.png)
+
+
+	+ Instalamos la aplicación nano, que es un edior de texto.
+
+		sudo apt-get install nano
+
+	+ Cremamos un archivo y lo ejecutamos con nano.
+
+		sudo nano archivo.txt 
+
+	+ Modificamos el archivo y con la siguiente orden vemos el contenido.
+
+		cat archivo.txt
+
+	Y con esto ya habríamos probado a instalar aplicaciones dentro de una jaula.
+)
