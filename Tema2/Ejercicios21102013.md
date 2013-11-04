@@ -15,3 +15,22 @@
 
 ![captura1](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio1.png)
 
+# Ejercicio2
+------------
+1. Mostrar los puentes configurados en el sistema operativo.
+	Por defecto no hay ningún puente configurado en el sistema operativo, pero como he estado siguiendo los ejemplos y creando nuevos, me aparece alcantara.
+
+![captura2]()
+
+2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+	El puente se crearía con la orden
+		> sudo brctl addbr prueba
+
+	Para añadir el puente una interfaz se haría mediante
+		> sudo brctl addif prueba wlan0
+
+	Aunque a mi la wlan0 me da error... a la eth0 se puede añadir sin problemas, a no ser que tengas asignado un 
+	puente ya a esa interfaz.
+	
+![captura3]()
