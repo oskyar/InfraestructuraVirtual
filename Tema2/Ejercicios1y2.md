@@ -25,12 +25,13 @@
 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
 	El puente se crearía con la orden
-		> sudo brctl addbr prueba
+		
+			$ sudo brctl addbr prueba
 
 	Para añadir el puente una interfaz se haría mediante
-		> sudo brctl addif prueba wlan0
+		
+			$ sudo brctl addif prueba wlan0
 
-	Aunque a mi la wlan0 me da error... a la eth0 se puede añadir sin problemas, a no ser que tengas asignado un 
-	puente ya a esa interfaz.
+	Aunque a mi la wlan0 me da error... a la eth0 se puede añadir sin problemas, a no ser que tengas asignado un  puente ya a esa interfaz.
 	
 ![captura3](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/ejercicio%202%20b%29.png)
