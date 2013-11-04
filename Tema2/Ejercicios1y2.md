@@ -35,3 +35,7 @@
 	Aunque a mi la wlan0 me da error... a la eth0 se puede añadir sin problemas, a no ser que tengas asignado un  puente ya a esa interfaz.
 	
 ![captura3](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/ejercicio%202%20b%29.png)
+
+
+
+### [Ejercicios 3 y 4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios3y4.md)
