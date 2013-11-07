@@ -15,3 +15,7 @@
 ---------
 
 ### [Ejercicios 1-2](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios1y2.md)
+
+### [Ejercicios 3-4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios3y4.md)
+
+### [Ejercicios 5-6](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios5y6.md)
