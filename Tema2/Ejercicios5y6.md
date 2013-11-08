@@ -83,7 +83,7 @@ Una vez instalado correctamente **nginx** vamos a proceder a la instalación y e
 
 Nos debe quedar algo como esto.
 
-[captura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio6-configurando_shell_usuario_jaula.png)
+![captura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio6-configurando_shell_usuario_jaula.png)
 
 > Aquí va un pequeño escript para hacer todo lo anterior de una vez.
 >	Script para instalar jaula + usuario...
