@@ -20,17 +20,19 @@
 
 Debido a los problemas que he tenido instalando nginx ([enlace a mi instalación fallida](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/instalacion_fallida_nginx.md)), he instalado *nginx* como nos indica del compañero  [Germán Martínez Maldonado](https://github.com/germaaan/IV_GMM/wiki/Ejercicios-Tema-2) en el "Ejercicio 5".
 
-Una vez instalado correctamente **nginx** vamos a proceder a la instalación y ejecución de curl para comprobar que el superservidor funciona.
+-------------------------------
 
-    Instalamos curl para ver el contenido de un html en el terminal
+> Una vez instalado correctamente `nginx` vamos a proceder a la instalación y ejecución de curl para comprobar que el superservidor funciona.
 
-	   apt-get install curl
+1. Instalamos curl para ver el contenido de un html en el terminal
 
-    Y ahora usamos la siguiente orden para comprobar que el servidor *nginx* está en funcionamiento correctamente.
+		apt-get install curl
 
-	   curl localhost
+2. usamos la siguiente orden para comprobar que el servidor *nginx* está en funcionamiento correctamente.
 
-    Monstándonos lo siguiente:
+		curl localhost
+
+Monstándonos lo siguiente:
 
 ![Imagen Ngnix](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio5-ProbandoNginxConCurl.png)
 
@@ -89,15 +91,15 @@ Nos debe quedar algo como esto.
 >	Script para instalar jaula + usuario...
 
 	sudo mkdir -p /seguro/jaulas/dorada
-       sudo chown -R root:root /seguro
-       sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
-       sudo adduser user_jk
-       sudo jk_jailuser -m -j /seguro/jaulas/dorada user_jk
+	sudo chown -R root:root /seguro
+	sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
+	sudo adduser user_jk
+	sudo jk_jailuser -m -j /seguro/jaulas/dorada user_jk
 
 -----------------------------------------------------------------------
 ##### Por último nos queda conectarnos con el usuario enjaulado:
 
-        sudo ssh user_jk@localhost
+        ssh user_jk@localhost
         password: ***
         
 ![Entrando en la jaula](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio6-entrando-en-la-jaula.png)
