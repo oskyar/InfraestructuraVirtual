@@ -18,19 +18,19 @@
 
 ![captura1](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio%203%20a%29%20.png)
 
-Debido a los problemas que he tenido instalando nginx ([enlace a mi instalación fallida](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/instalacion_fallida_nginx.md))
+Debido a los problemas que he tenido instalando nginx ([enlace a mi instalación fallida](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/instalacion_fallida_nginx.md)), he instalado nginx como nos indica del compañero  [Germán Martínez Maldonado](https://github.com/germaaan/IV_GMM/wiki/Ejercicios-Tema-2) en el "Ejercicio 5".
 
-##### He instalado nginx como nos indica del compañero (Ejercicio 5) [Germán Martínez Maldonado](https://github.com/germaaan/IV_GMM/wiki/Ejercicios-Tema-2)
+Una vez instalado correctamente **nginx** vamos a proceder a la instalación y ejecución de curl para comprobar que el superservidor funciona.
 
-Instalamos curl para ver el contenido de un html en el terminal
+    Instalamos curl para ver el contenido de un html en el terminal
 
-	apt-get install curl
+	   apt-get install curl
 
-Y ahora usamos la siguiente orden para comprobar que el servidor nginx está en funcionamiento.
+    Y ahora usamos la siguiente orden para comprobar que el servidor nginx está en funcionamiento correctamente.
 
-	curl localhost
+	   curl localhost
 
-Monstándonos lo siguiente:
+    Monstándonos lo siguiente:
 
 ![Imagen Ngnix](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio5-ProbandoNginxConCurl.png)
 
@@ -43,9 +43,9 @@ Monstándonos lo siguiente:
 
 + Descarga, descompresión, configuración e instalación de jailkit.
         
-        Descarga:
+    > Descarga:
 		  
-        >  wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+          wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
 		
         Descompresión:
 
