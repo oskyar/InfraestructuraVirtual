@@ -18,7 +18,7 @@
 
 ![captura1](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio%203%20a%29%20.png)
 
-Debido a los problemas que he tenido instalando nginx ([enlace a mi instalación fallida](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/instalacion_fallida_nginx.md)), he instalado nginx como nos indica del compañero  [Germán Martínez Maldonado](https://github.com/germaaan/IV_GMM/wiki/Ejercicios-Tema-2) en el "Ejercicio 5".
+Debido a los problemas que he tenido instalando nginx ([enlace a mi instalación fallida](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/instalacion_fallida_nginx.md)), he instalado *nginx* como nos indica del compañero  [Germán Martínez Maldonado](https://github.com/germaaan/IV_GMM/wiki/Ejercicios-Tema-2) en el "Ejercicio 5".
 
 Una vez instalado correctamente **nginx** vamos a proceder a la instalación y ejecución de curl para comprobar que el superservidor funciona.
 
@@ -26,7 +26,7 @@ Una vez instalado correctamente **nginx** vamos a proceder a la instalación y e
 
 	   apt-get install curl
 
-    Y ahora usamos la siguiente orden para comprobar que el servidor nginx está en funcionamiento correctamente.
+    Y ahora usamos la siguiente orden para comprobar que el servidor *nginx* está en funcionamiento correctamente.
 
 	   curl localhost
 
@@ -43,54 +43,61 @@ Una vez instalado correctamente **nginx** vamos a proceder a la instalación y e
 
 + Descarga, descompresión, configuración e instalación de jailkit.
         
-    > Descarga:
+1. Descarga:
 		  
-          wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+		wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
 		
-        Descompresión:
+2. Descompresión:
 
-        > tar xvzf jailkit-2.16.tar.gz
+		tar xvzf jailkit-2.16.tar.gz
 
-        Instalación: 
+3. Instalación: 
 
-		> cd jailkit-2.16
-		> sudo ./configure && sudo make && sudo make install
+		cd jailkit-2.16
+		sudo ./configure && sudo make && sudo make install
 
+4. Instalación de jailkit completada
+
+---------------------------------------------------------------------
+
+#####  `Permisos` root, creación de la `jaula`, creación del `usuario` y enjaulamiento:
+> Se hace todo desde la consola del sistema, a ser posible con permisos root para no estar poniendo sudo en todas las órdenes.
 
 1. Creamos el sistema de ficheros con permisos para root.
 
-        mkdir -p /seguro/jaulas/dorada
-        chown -R root:root /seguro
+        	mkdir -p /seguro/jaulas/dorada
+        	chown -R root:root /seguro
 
-    2. Creamos la jaula con la funcionalidad que queramos.
+2. Creamos la jaula con las dependencias/funcionalidades que queramos.
 
-        jkinit -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
+        	jkinit -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
 
-    3. Creamos un usuario y lo enjaulamos.
+3. Creamos un usuario y lo enjaulamos.
 
-        adduser usuario
-        sudo jk_jailuser -m -j /seguro/jaulas/dorada usuario
+        	adduser user_jk
+        	sudo jk_jailuser -m -j /seguro/jaulas/dorada user_jk
+	
+4.  Editamos la configuracion para permitir a este usuario tener acceso a la shell limitada.
 
-    4.  Editamos la configuracion para permitir a este usuario tener acceso a la shell
-        limitada.
+		sudo nano /seguro/jaulas/dorada/etc/passwd
 
-        gedit /seguro/jaulas/dorada/etc/passwd
+Nos debe quedar algo como esto.
 
-        Nos debe quedar algo como esto.
+[captura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio6-configurando_shell_usuario_jaula.png)
 
+> Aquí va un pequeño escript para hacer todo lo anterior de una vez.
+>	Script para instalar jaula + usuario...
 
+	sudo mkdir -p /seguro/jaulas/dorada
+       sudo chown -R root:root /seguro
+       sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
+       sudo adduser user_jk
+       sudo jk_jailuser -m -j /seguro/jaulas/dorada user_jk
 
-Script para instalar jaula + usuario...
+-----------------------------------------------------------------------
+##### Por último nos queda conectarnos con el usuario enjaulado:
 
-		sudo mkdir -p /seguro/jaulas/dorada
-        sudo chown -R root:root /seguro
-        sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
-        sudo adduser user_jk
-        sudo jk_jailuser -m -j /seguro/jaulas/dorada user_jk
-
-# Modificar la shell
-        sudo nano /seguro/jaulas/dorada/etc/passwd
-
-# conectarme al usuario
         sudo ssh user_jk@localhost
-        pass: 1
+        password: ***
+        
+![Entrando en la jaula](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema2/img/Ejercicio6-entrando-en-la-jaula.png)
