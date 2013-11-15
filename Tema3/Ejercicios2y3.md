@@ -48,24 +48,24 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 > > El ejercicio anterior está basado en un sistema debianita (Ubuntu), pero indicaré como es la creación del contenedor y la ejecución..
 
-	* Creación del contenedor debianita.
+* Creación del contenedor debianita.
 
 		$ sudo lxc-create -t ubuntu -n un-contenedor
 
 ![Creacion de un Contenedor de un sistema Ubuntu](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3-CreandoContenedorUbuntu.png)
 
-	* Ejecución del contenedor
+* Ejecución del contenedor
 
 		$ lxc-start -n un-contenedor
 
-	* Y nos aparece esto, ¿por qué?
+* Y nos aparece esto, ¿por qué?
 
 ![Ejecucion contenedor sin permisos de superusuario](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3-ErrorEjecucionContenedorUbuntu.png)
 
-	###### ¡¡Porque hay que hacer con permisos de superusuario!!
+###### ¡¡Porque hay que hacer con permisos de superusuario!!
 
 
-	* Probamos de nuevo con permisos de superusuario
+* Probamos de nuevo con permisos de superusuario
 
 		$ sudo lxc-start -n un-contenedor
 
@@ -74,19 +74,22 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 * Le damos a "Enter ó Intro" y ya nos aparecerá para iniciar sesión con el usuario
 
 	> Recordar que los datos son:
+
 	> Usuario: ubuntu
+
 	> Contraseña: ubuntu
 
 * Y ya estaremos dentro y logueados en nuestro contenedor
 
 ![Ejecucion y log in contenedor ubuntu](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3-EjecucionYLoginContenedorUbuntu.png)
 
-### Recordatorio para parar la ejecución de un contenedor:
+----------------------------------
+###### Recordatorio para parar la ejecución de un contenedor:
 
 * Desde otra terminal debemos ejecutar la siguiente orden (como superusuario)
 
 		$ sudo lxc-stop -n nombre-contenedor
-
+----------------------------------
 
 > 2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
 
@@ -94,13 +97,13 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 * Vamos a instalar la distribución de Fedora, pero antes vamos a comprobar los templates que tiene lxc (Plantillas para LXC de diferentes distribuciones de Linux para la instalación y configuración de los contenedores).
 
-	$ ls /usr/share/lxc/templates
+		$ ls /usr/share/lxc/templates
 
 ![Templates de LXC](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-TemplatesLxc.png)
 
 * Escogemos el sistema fedora para el contenedor
 
-	$ sudo lxc-create -t fedora -n contenedor-fedora
+		$ sudo lxc-create -t fedora -n contenedor-fedora
 
 * Y observamos que nos sale el siguiente error:
 
@@ -110,7 +113,17 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 		$ sudo apt-get install yum curl
 
-* Una vez instalado pasamos a instalar el sistema fedora en un contenedor, pero nos va a dar 
+* Una vez instalado pasamos a instalar el sistema fedora en un contenedor, pero nos va a dar un error, por lo que si no tenemos actualizado los repositorios del sistema los actualizamos.
 
+		$ sudo apt-get update && sudo apt-get upgrade
 
+* Ahora para asegurarnos de que nos va a funcionar la instalación de fedora, nos descargamos el template actualizado de fedora y lo guardamos en la carpeta de los templates
+
+		$ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/fajarnugraha/lxc/master/templates/lxc-fedora.in
+
+* Damos permisos de ejecución.
+		
+		$ chmod +x /usr/share/lxc/templates/lxc-fedora.in
+
+* Y ahora cambiamos el fedor
 
