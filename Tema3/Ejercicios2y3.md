@@ -44,7 +44,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 # Ejercicio 3
 -------------
-> 1\. Crear y ejecutar un contenedor basado en Debian.
+> ###1\. Crear y ejecutar un contenedor basado en Debian.
 
 > > El ejercicio anterior está basado en un sistema debianita (Ubuntu), pero indicaré como es la creación del contenedor y la ejecución..
 
