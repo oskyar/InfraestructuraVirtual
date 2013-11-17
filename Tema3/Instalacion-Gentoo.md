@@ -71,10 +71,12 @@
 
 		![Escogiendo variante de la arquitectura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Escogiendo-variante-arquitectura.png)
 
-	10. Ya comenzará la descarga y se configurará todo *(captura de todo el proceso)*
+	10. Ya comenzará la descarga y se configurará todo.
 
 		![Instalación de Gentoo terminada](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Instalacion-gentoo-terminada.png)
 
 	11. Finalmente, nos muestra algunas indicaciones para lanzar el contenedor ó para modificar sus archivos de configuración sin tener que arrancar el contenedor:
 
 		![Ejecución y configuración opcional de gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Ejecucion-y-configuracion-opcional.png)
+
+4. Y ya tenemos instalado Gentoo con LXC.
