@@ -130,7 +130,10 @@ Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de
 
 		$ lxc-start -f gentooGlobal.conf -n gentooGlobal
 
-* Y finalmente para parar un contenedor, desde otra terminal ejecutamos:
+		![Lanzando Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Lanzando-Gentoo.png)
+
+
+* Y finalmente para *parar* un contenedor, desde otra terminal ejecutamos:
 
 		$ sudo lxc-stop -n gentooGlobal
 
