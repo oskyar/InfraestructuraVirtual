@@ -1,6 +1,6 @@
 ##Instalación Gentoo 
 
-**(Si estás leyendo es porque has realizado todos los pasos del [Èjercicio 3 - Punto 2](/Tema3/Ejercicios2y3.md#ejercicio3parte2) )**
+**(Si estás leyendo es porque has realizado todos los pasos del [Èjercicio 3 - Punto 2](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios2y3.md#2-crear-y-ejecutar-un-contenedor-basado-en-otra-distribuci%C3%B3n-tal-como-fedora-nota-en-general-crear-un-contenedor-basado-en-tu-distribuci%C3%B3n-y-otro-basado-en-otra-que-no-sea-la-tuya) )**
 
 1. Hay que ser usuario **ROOT**
 
@@ -82,4 +82,4 @@
 4. Y ya tenemos instalado Gentoo con LXC.
 
 
-### [Volver al Ejercicio3](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios2y3.md)
+### [Volver al Ejercicio3 segudna parte](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios2y3.md#2-crear-y-ejecutar-un-contenedor-basado-en-otra-distribuci%C3%B3n-tal-como-fedora-nota-en-general-crear-un-contenedor-basado-en-tu-distribuci%C3%B3n-y-otro-basado-en-otra-que-no-sea-la-tuya)
