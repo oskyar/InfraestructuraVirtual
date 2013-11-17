@@ -26,7 +26,7 @@
 
 	4. What is the gateway IP address ? 
 
-		> Por defecto también `172.20.0.1
+		> Por defecto también `172.20.0.1`
 
 	5. Type guest root password (enter for none/use already defined): 
 
@@ -37,22 +37,24 @@
 		> Pregunta que desde qué página se descarga la distribución de gentoo, he dejado la que viene por defecto `http://distfiles.gentoo.org`
 
 
-		* Ahora nos escriben una nota: `Note that you will have to set up Qemu? emulation yourself if your CPU cannot natively execute the chosen architecture (see README).`
+	7. Ahora nos escriben una nota: `Note that you will have to set up Qemu? emulation yourself if your CPU cannot natively execute the chosen architecture (see README).`
 
-	7. Select desired container architecture:
+		> Nos indica que tendremos que tener configurado **Qemu**, de esto depende la arquitectura que escogamos, si tenemos dudas, visualizar el README que viene.
+
+	8. Select desired container architecture:
 	
-	1\) alpha    3\) arm     5\) ia64	  7\) s390    9\) sparc
-	
-	2\) amd64    4\) hppa    6\) ppc	  8\) sh	    10\) x86
-	
-	\#?
+		1\) alpha    3\) arm     5\) ia64	  7\) s390    9\) sparc
+		
+		2\) amd64    4\) hppa    6\) ppc	  8\) sh	    10\) x86
+		
+		\#?
 
 		> He utilizado la misma arquitectura que el sistema host (amd64 -> 64 bits) para evitar problemas, por lo que pulso `2` en mi caso.
 
 ![Proceso de instalación de Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-proceso-instalacion-gentoo.png)
 
 
-	8. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
+	9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
 
 		Select desired container subarchitecture/variant for amd64:
 		1\) amd64-hardened+nomultilib  4\) amd64
@@ -64,10 +66,10 @@
 
 ![Escogiendo variante de la arquitectura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Escogiendo-variante-arquitectura.png)
 
-	9. Ya comenzará la descarga y se configurará todo *(captura de todo el proceso)*
+	10. Ya comenzará la descarga y se configurará todo *(captura de todo el proceso)*
 
 ![Instalación de Gentoo terminada](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Instalacion-gentoo-terminada.png)
 
-	10. Finalmente, nos muestra algunas indicaciones para lanzar el contenedor ó para modificar sus archivos de configuración sin tener que arrancar el contenedor:
+	11. Finalmente, nos muestra algunas indicaciones para lanzar el contenedor ó para modificar sus archivos de configuración sin tener que arrancar el contenedor:
 
 ![Ejecución y configuración opcional de gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Ejecucion-y-configuracion-opcional.png)
