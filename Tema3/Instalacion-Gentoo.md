@@ -55,22 +55,26 @@
 		![Proceso de instalación de Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-proceso-instalacion-gentoo.png)
 
 
-9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
+	9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
 
-	Select desired container subarchitecture/variant for amd64:
-	1\) amd64-hardened+nomultilib  4\) amd64
-	2\) amd64-hardened	      5\) x32
-	3\) amd64-nomultilib
-	\#?
+		Select desired container subarchitecture/variant for amd64:
+		
+		1\) amd64-hardened+nomultilib  4\) amd64
+		
+		2\) amd64-hardened	      5\) x32
+		
+		3\) amd64-nomultilib
+		
+		\#?
 
-	> Aquí no sé en qué difieren unas arquitecturas de otras así que me he dejado llevar por la opción `4` que me parece la más normal.
+		> Aquí no sé en qué difieren unas arquitecturas de otras así que me he dejado llevar por la opción `4` que me parece la más normal.
 
-![Escogiendo variante de la arquitectura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Escogiendo-variante-arquitectura.png)
+		![Escogiendo variante de la arquitectura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Escogiendo-variante-arquitectura.png)
 
 	10. Ya comenzará la descarga y se configurará todo *(captura de todo el proceso)*
 
-![Instalación de Gentoo terminada](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Instalacion-gentoo-terminada.png)
+		![Instalación de Gentoo terminada](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Instalacion-gentoo-terminada.png)
 
 	11. Finalmente, nos muestra algunas indicaciones para lanzar el contenedor ó para modificar sus archivos de configuración sin tener que arrancar el contenedor:
 
-![Ejecución y configuración opcional de gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Ejecucion-y-configuracion-opcional.png)
+		![Ejecución y configuración opcional de gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Ejecucion-y-configuracion-opcional.png)
