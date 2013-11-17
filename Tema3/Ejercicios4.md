@@ -48,9 +48,3 @@
 
 * Nos vamos al principio de la página y pulsamos en `Start` para lanzar el contenedor.
 
-
-kernel 3.8.0-31-generic para ubuntu 13.10
-
-http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-image-3.8.0-31-generic_3.8.0-31.46_amd64.deb
-
-probando....
