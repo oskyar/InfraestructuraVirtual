@@ -37,9 +37,10 @@
 		> Pregunta que desde qué página se descarga la distribución de gentoo, he dejado la que viene por defecto `http://distfiles.gentoo.org`
 
 
-	7. Ahora nos escriben una nota: `Note that you will have to set up Qemu? emulation yourself if your CPU cannot natively execute the chosen architecture (see README).`
+	7. Ahora nos escriben una nota: `Note that you will have to set up Qemu? emulation yourself if your CPU cannot natively execute the chosen 
+	architecture (see README).`
 
-		> Nos indica que tendremos que tener configurado **Qemu**, de esto depende la arquitectura que escogamos, si tenemos dudas, visualizar el README que viene.
+		> Nos indica que tendremos que tener configurado **Qemu** ([Emulador de procesadores](http://es.wikipedia.org/wiki/QEMU "Qemu en la wikipedia")), de esto depende la arquitectura que escogamos, si tenemos dudas, visualizar el README que viene.
 
 	8. Select desired container architecture:
 	
@@ -54,15 +55,15 @@
 ![Proceso de instalación de Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-proceso-instalacion-gentoo.png)
 
 
-	9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
+9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
 
-		Select desired container subarchitecture/variant for amd64:
-		1\) amd64-hardened+nomultilib  4\) amd64
-		2\) amd64-hardened	      5\) x32
-		3\) amd64-nomultilib
-		\#?
+	Select desired container subarchitecture/variant for amd64:
+	1\) amd64-hardened+nomultilib  4\) amd64
+	2\) amd64-hardened	      5\) x32
+	3\) amd64-nomultilib
+	\#?
 
-		> Aquí no sé en qué difieren unas arquitecturas de otras así que me he dejado llevar por la opción `4` que me parece la más normal.
+	> Aquí no sé en qué difieren unas arquitecturas de otras así que me he dejado llevar por la opción `4` que me parece la más normal.
 
 ![Escogiendo variante de la arquitectura](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Escogiendo-variante-arquitectura.png)
 
