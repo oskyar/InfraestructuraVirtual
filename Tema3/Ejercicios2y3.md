@@ -106,7 +106,10 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 * Descargamos la plantilla y lo colocamos en el directorio `/usr/share/lxc/templates/`
 
+```bash
 	    $ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo
+
+```
 
 * Damos permisos de ejecución
 
