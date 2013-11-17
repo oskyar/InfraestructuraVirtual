@@ -80,3 +80,6 @@
 		![Ejecución y configuración opcional de gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-Ejecucion-y-configuracion-opcional.png)
 
 4. Y ya tenemos instalado Gentoo con LXC.
+
+
+### [Volver al Ejercicio3](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios2y3.md)

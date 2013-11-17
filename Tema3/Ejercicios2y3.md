@@ -117,9 +117,9 @@ Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de
 
 * Y ya podemos crear el contenedor, aunque ésta vez se crea de distinta forma debido a cómo está configurado el script, por ello tan solo con ejecutar el script ya nos va indicando qué los pasos a seguir.
 
-	**NOTA: El script hay que ejecutarlo como usuaro `ROOT`**
+	**NOTA: El script hay que ejecutarlo como usuario `ROOT`**
 
-	**NOTA2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
+	**NOTA 2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
 
 	    $ /usr/share/lxc/templates/lxc-gentoo create
 
@@ -129,3 +129,11 @@ Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de
 * Ahora para lanzar el contenedor de Gentoo debemos indicar el archivo de configuración y el nombre del contenedor (**lanzarlo como root**:
 
 		$ lxc-start -f gentooGlobal.conf -n gentooGlobal
+
+* Y finalmente para parar un contenedor, desde otra terminal ejecutamos:
+
+		$ sudo lxc-stop -n gentooGlobal
+
+
+
+### [Ejercicio 4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios4.md)
