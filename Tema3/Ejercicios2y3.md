@@ -91,7 +91,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 		$ sudo lxc-stop -n nombre-contenedor
 ----------------------------------
 
-{#ejercicio3parte2}
+
 > 2\. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
 
 > > Como mi sistema tiene una distribución de Ubuntu instalada (versión 13.10) doy por realizada la primera parte del ejercicio2.
@@ -106,10 +106,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 * Descargamos la plantilla y lo colocamos en el directorio `/usr/share/lxc/templates/`
 
-```bash
-	$ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo
-
-```	
+	    $ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo
 
 * Damos permisos de ejecución
 
@@ -121,10 +118,8 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 	**NOTA2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
 
-```bash
-$ /usr/share/lxc/templates/lxc-gentoo create
+	    $ /usr/share/lxc/templates/lxc-gentoo create
 
-```
 
 * ### [Paso a paso la instalación (realizado por mi)]()
 
@@ -132,3 +127,5 @@ $ /usr/share/lxc/templates/lxc-gentoo create
 
 		$ lxc-start -f gentooGlobal.conf -n gentooGlobal
 
+
+ 
