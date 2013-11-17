@@ -52,7 +52,7 @@
 
 		> He utilizado la misma arquitectura que el sistema host (amd64 -> 64 bits) para evitar problemas, por lo que pulso `2` en mi caso.
 
-![Proceso de instalación de Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-proceso-instalacion-gentoo.png)
+		![Proceso de instalación de Gentoo](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-proceso-instalacion-gentoo.png)
 
 
 9. Empezará a descargar algunos archivos más de la arquitectura que hemos escogido para mostrarnos otras variantes y nos preguntará:
