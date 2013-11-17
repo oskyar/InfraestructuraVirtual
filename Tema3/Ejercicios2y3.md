@@ -5,7 +5,7 @@
 
 Para comprobar qué interfaces puentes ha creado el contenedor (creado con lxc) escribiremos esta orden.
 
-	$ sudo brctl show
+    $ sudo brctl show
 
 Y observaremos lo siguiente:
 
@@ -44,7 +44,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 # Ejercicio 3
 -------------
-> 1. Crear y ejecutar un contenedor basado en Debian.
+> 1\. Crear y ejecutar un contenedor basado en Debian.
 
 > > El ejercicio anterior está basado en un sistema debianita (Ubuntu), pero indicaré como es la creación del contenedor y la ejecución..
 
@@ -91,39 +91,41 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 		$ sudo lxc-stop -n nombre-contenedor
 ----------------------------------
 
-> 2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
+{#ejercicio3parte2}
+> 2\. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
 
 > > Como mi sistema tiene una distribución de Ubuntu instalada (versión 13.10) doy por realizada la primera parte del ejercicio2.
 
-* Vamos a instalar la distribución de Fedora, pero antes vamos a comprobar los templates que tiene lxc (Plantillas para LXC de diferentes distribuciones de Linux para la instalación y configuración de los contenedores).
+* Debido a los problemas para la instalación de Fedora (Estos problemas pueden ser debidos a que el host es Ubuntu 13.10 y tiene un kernel demasiado actualizado para poder crear un contenedor con Fedora ya que utiliza un kernel de una versión inferior, y ya sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de contenedores es que el kernel de los sistemas dentro de los contenedores debe de ser el mismo que el del host. Por ello voy a pasar a instalar la distribución de Gentoo , pero antes vamos a comprobar los templates que tiene lxc (Plantillas para LXC de diferentes distribuciones de Linux para la instalación y configuración de los contenedores).
 
 		$ ls /usr/share/lxc/templates
 
 ![Templates de LXC](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-TemplatesLxc.png)
 
-* Escogemos el sistema fedora para el contenedor
+* Vemos que no tenemos Gentoo, pero lo podemos descargar de [plantilla de Gentoo para LXC](https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo)
 
-		$ sudo lxc-create -t fedora -n contenedor-fedora
+* Descargamos la plantilla y lo colocamos en el directorio `/usr/share/lxc/templates/`
 
-* Y observamos que nos sale el siguiente error:
+	    $ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo
 
-![Error Instalación por falta de dependencias](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3b-ErrorInstalacionFaltaYumYCurl.png)
+* Damos permisos de ejecución
 
-* Instalamos `yum` y `curl`. Según la distribución que tengamos lo instalamos con el gestor de paquetes que tengamos (apt-get en mi caso)
+	    $ sudo chmod +x /usr/share/lxc/templates/lxc-gentoo
 
-		$ sudo apt-get install yum curl
+* Y ya podemos crear el contenedor, aunque ésta vez se crea de distinta forma debido a cómo está configurado el script, por ello tan solo con ejecutar el script ya nos va indicando qué los pasos a seguir.
 
-* Una vez instalado pasamos a instalar el sistema fedora en un contenedor, pero nos va a dar un error, por lo que si no tenemos actualizado los repositorios del sistema los actualizamos.
+	**NOTA: El script hay que ejecutarlo como usuaro `ROOT` **
 
-		$ sudo apt-get update && sudo apt-get upgrade
+	**NOTA2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
 
-* Ahora para asegurarnos de que nos va a funcionar la instalación de fedora, nos descargamos el template actualizado de fedora y lo guardamos en la carpeta de los templates
+	    $ /usr/share/lxc/templates/lxc-gentoo create
 
-		$ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/fajarnugraha/lxc/master/templates/lxc-fedora.in
 
-* Damos permisos de ejecución.
-		
-		$ chmod +x /usr/share/lxc/templates/lxc-fedora.in
+* ### [Paso a paso la instalación (realizado por mi)]()
 
-* Y ahora cambiamos el fedor
+* Ahora para lanzar el contenedor de Gentoo debemos indicar el archivo de configuración y el nombre del contenedor:
 
+		$ lxc-start -f gentooGlobal.conf -n gentooGlobal
+
+
+ 
