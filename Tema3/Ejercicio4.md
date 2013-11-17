@@ -1,7 +1,7 @@
 # Ejercicio 4
 -------------
 
-> Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+> ###1\.Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
 
 * Para instalar lxc-webpanel seguiremos la instalación de la página de [lxc-webpanel](http://lxc-webpanel.github.io/install.html)
 
@@ -28,7 +28,7 @@
 * Se ven como contenedores algunos que no son contenedores, no te preocupes, eso es culpa mía por estar trasteando más de la cuenta las órdenes de lxc.
 
 
-> 2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+> ###2\. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
 
 * Para restringir los recursos desde el WebPanel, buscamos a la izquierda `containers` y ahora hacemos click en el contenedor que configurar.
 
