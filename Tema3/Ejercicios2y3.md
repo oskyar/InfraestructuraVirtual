@@ -121,7 +121,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 	    $ /usr/share/lxc/templates/lxc-gentoo create
 
 
-* ### [Paso a paso la instalación (realizado por mi)]()
+* ### [Paso a paso la instalación (realizado por mi)](/Tema3/Instalacion-Gentoo.md)
 
 * Ahora para lanzar el contenedor de Gentoo debemos indicar el archivo de configuración y el nombre del contenedor:
 
