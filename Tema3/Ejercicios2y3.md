@@ -62,7 +62,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 ![Ejecucion contenedor sin permisos de superusuario](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio3-ErrorEjecucionContenedorUbuntu.png)
 
-###### ¡¡Porque hay que hacer con permisos de superusuario!!
+###### ¡¡Porque hay que hacerlo con permisos de superusuario!!
 
 
 * Probamos de nuevo con permisos de superusuario
@@ -73,7 +73,7 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 * Le damos a "Enter ó Intro" y ya nos aparecerá para iniciar sesión con el usuario
 
-	> Recordar que los datos son:
+	> Recordad que los datos son:
 
 	> Usuario: ubuntu
 
@@ -89,14 +89,17 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 * Desde otra terminal debemos ejecutar la siguiente orden (como superusuario)
 
 		$ sudo lxc-stop -n nombre-contenedor
+
 ----------------------------------
 
+##### Segunda parte
 
 > 2\. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
 
 > > Como mi sistema tiene una distribución de Ubuntu instalada (versión 13.10) doy por realizada la primera parte del ejercicio2.
 
-* Debido a los problemas para la instalación de Fedora (Estos problemas pueden ser debidos a que el host es Ubuntu 13.10 y tiene un kernel demasiado actualizado para poder crear un contenedor con Fedora ya que utiliza un kernel de una versión inferior, y ya sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de contenedores es que el kernel de los sistemas dentro de los contenedores debe de ser el mismo que el del host. Por ello voy a pasar a instalar la distribución de Gentoo , pero antes vamos a comprobar los templates que tiene lxc (Plantillas para LXC de diferentes distribuciones de Linux para la instalación y configuración de los contenedores).
+* Debido a los problemas para la instalación de Fedora; que estos problemas pueden ser debidos a que el host *(en mi caso)* es `Ubuntu 13.10` y tiene un **kernel** demasiado actualizado para poder crear un contenedor con `Fedora` ya que utiliza un kernel de una versión inferior. 
+Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de contenedores es que el kernel de los sistemas dentro de los contenedores deben usar la misma versión que el del host. Por ello voy a pasar a instalar la distribución de Gentoo, pero no sin antes comprobar los **templates** que tiene lxc (Plantillas para LXC de diferentes distribuciones de Linux para la instalación y configuración de los contenedores).
 
 		$ ls /usr/share/lxc/templates
 
