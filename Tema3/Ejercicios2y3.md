@@ -117,7 +117,7 @@ Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de
 
 * Y ya podemos crear el contenedor, aunque ésta vez se crea de distinta forma debido a cómo está configurado el script, por ello tan solo con ejecutar el script ya nos va indicando qué los pasos a seguir.
 
-	**NOTA: El script hay que ejecutarlo como usuaro `ROOT` **
+	**NOTA: El script hay que ejecutarlo como usuaro `ROOT`**
 
 	**NOTA2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
 
