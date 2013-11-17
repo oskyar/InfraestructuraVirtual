@@ -118,10 +118,10 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 	**NOTA2: El contenedor se crea desde el PATH en el que se ha ejecutado el script**
 
-		```bash
-	    $ /usr/share/lxc/templates/lxc-gentoo create
+```bash
+$ /usr/share/lxc/templates/lxc-gentoo create
 
-	    ```
+```
 
 * ### [Paso a paso la instalación (realizado por mi)]()
 
@@ -129,8 +129,3 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 		$ lxc-start -f gentooGlobal.conf -n gentooGlobal
 
-
- 
- ## pepe ## {#id}
-
- [erer]{#id}
