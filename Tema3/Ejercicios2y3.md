@@ -92,9 +92,8 @@ Ahora vemos que se le ha asignado una id y un nombre de interfaz, en mi caso `ve
 
 ----------------------------------
 
-##### Segunda parte
 
-> 2\. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
+> ### 2\. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.
 
 > > Como mi sistema tiene una distribución de Ubuntu instalada (versión 13.10) doy por realizada la primera parte del ejercicio2.
 
