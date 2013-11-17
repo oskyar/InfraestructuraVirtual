@@ -123,7 +123,7 @@ Sabemos que al crear un contenedor uno de los requisitos que restrigen el uso de
 	    $ /usr/share/lxc/templates/lxc-gentoo create
 
 
-* ### [Paso a paso la instalación (realizado por mi)](/Tema3/Instalacion-Gentoo.md)
+* ### [Paso a paso la instalación (realizado por mi)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Instalacion-Gentoo.md#instalaci%C3%B3n-gentoo)
 
 * Ahora para lanzar el contenedor de Gentoo debemos indicar el archivo de configuración y el nombre del contenedor (**lanzarlo como root**:
 
