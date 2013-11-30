@@ -1,4 +1,4 @@
-# Ejercicio 6
+# Ejercicio 8
 -------------
 
 > Instalar libvirt. Te puede ayudar esta [guía para Ubuntu](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
@@ -12,7 +12,7 @@
 		$ sudo adduser $USER libvirtd
 
 
-# Ejercicio 7
+# Ejercicio 9
 -------------
 
 > Instalar un contenedor usando virt-install.
