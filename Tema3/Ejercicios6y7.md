@@ -3,12 +3,12 @@
 
 > 1. Instalar juju.
 
-- Para instalar juju seguimos los pasos que se indican en la guía.
+	- Para instalar juju seguimos los pasos que se indican en la guía.
 
 		$ sudo sudo add-apt-repository ppa:juju/stable
 		$ sudo apt-get update && sudo apt-get install juju-core
 
-- Lo configuramos para que funcione en modo local, cambiando en el  archivo `~/.juju/environments.yaml` 
+	- Lo configuramos para que funcione en modo local, cambiando en el  archivo `~/.juju/environments.yaml` 
 
 	+ Comentamos
 
