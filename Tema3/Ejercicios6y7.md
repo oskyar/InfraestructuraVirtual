@@ -8,13 +8,13 @@
 		$ sudo sudo add-apt-repository ppa:juju/stable
 		$ sudo apt-get update && sudo apt-get install juju-core
 
-- Lo configuramos en modo local cambiando en el contenido del archivo `~/.juju/environments.yaml` 
+- Lo configuramos para que funcione en modo local, cambiando en el  archivo `~/.juju/environments.yaml` 
 
-	+ Cambiando
+	+ Comentamos
 
 			default: amazon
 
-	+ Por
+	+ Y escribimos
 
 			# default: amazon
 			default: local
