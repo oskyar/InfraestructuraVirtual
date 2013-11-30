@@ -57,24 +57,24 @@
 
 1. Empezamos instalando un contenedor desde `LXC-WebPanel`.
 
-		![Creando contenedor con LXC-WebPanel](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-CreandoContenedorLWP.png)
+	![Creando contenedor con LXC-WebPanel](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-CreandoContenedorLWP.png)
 
 2. Instalamos `nginx` dentro del contenedor:
 
-		![Instalando ngnix en el contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoNginxContenedor2.png)
+	![Instalando ngnix en el contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoNginxContenedor2.png)
 
 3. Instalamos una jaula con [debootstrap](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema2/Ejercicios3y4.md#ejercicio3)
 
 4. Entramos en la jaula e instalamos `ab` (Apache Benchmark)
 
-		![Instalando ab](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABJaula.png)
+	![Instalando ab](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABJaula.png)
 
 5. Instalamos `ab` en el contenedor.
 
-		![Instalando ab](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABContenedor.png)
+	![Instalando ab](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABContenedor.png)
 
-		![Instalando ab 2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABContenedor2.png)
+	![Instalando ab 2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-InstalandoABContenedor2.png)
 
 6. Observamos la comparación y vemos que la jaula tiene mayor velocidad de respuesta puesto que utiliza los recursos del host y por lo contrario en el contenedor como tiene que acceder mediante el puente que se crea en la interfaz de red retarda las peticiones. (Izquierda: Contenedor, Derecha: Jaula)
 
-		![Comparando resultados](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-ComparandoProcesos)
+	![Comparando resultados](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-ComparandoProcesos)
