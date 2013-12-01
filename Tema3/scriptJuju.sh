@@ -4,7 +4,73 @@
 # añadir la relacion entre ambos, exponer mediawiki
 # y ver el estado que en el que está.
 
-if [ $# == 1 ]; then
+if [ $# == 0 ]; then
+	
+	printf "\n*******************************"
+	printf "\n** Crear contenedor con Juju **\n"
+	printf "*******************************\n"
+	printf "\n1. Crear entorno (mediawiki + mysql)"
+	printf "\n2. Destruir todo el entorno (mediawiki + mysql + entorno)"
+	printf "\n3. Salir\n"
+	read -n1 -p "Elija una opción: " OPCION
+	printf "\n"
+
+	while [ $OPCION -lt 1 ] || [ $OPCION -gt 3 ];
+	do 
+		read -n1 -p "Escoja una opción correcta: " OPCION
+		printf "\n"
+	done
+
+	case $OPCION in
+		1 )
+			echo "[ Cambiando a modo local ]"
+			juju switch local
+			echo "[ Creando entorno ]"
+			sudo juju bootstrap
+			echo "[ Desplegando el servicio mediawiki ]"
+			juju deploy mediawiki
+			echo "[ Desplegando el servicio mysql ]"
+			juju deploy mysql
+			echo "[ Creando relación entre mediawiki y mysql ]"
+			juju add-relation mediawiki:db mysql
+			echo "[ Exponiendo mediawiki ]"
+			juju expose mediawiki
+			echo "[ Comprobamos el estado del entorno ]"
+			juju status
+			;;
+		2 )
+			read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+			printf "\n"
+
+			while [ $OPCION != "S" ] && [ $OPCION != "s" ] && [ $OPCION != "N" ] && [ $OPCION != "n" ];
+			do 
+				read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+				printf "\n"
+			done
+			
+			case $OPCION in
+			S | s )
+				echo "[ Quitamos la exposición de mediawiki ]"
+				juju unexpose mediawiki
+				echo "[ Eliminamos la relación ]"
+				juju destroy-relation mediawiki:db mysql
+				echo "[ Eliminando el servicio mysql ]"
+				juju destroy-service mysql
+				echo "[ Eliminando el servicio mediawiki ]"
+				juju destroy-service mediawiki
+				echo "[ Destruyendo el entorno ]"
+				sudo juju destroy-environment
+			;;
+			N | n ) printf "\n...cancelando la eliminación del entorno...\n" 
+			;;
+			esac
+			;;
+		3 ) 
+			echo "Saliendo..."
+		;;
+	esac	
+
+elif [ $# == 1 ]; then
 	if [ $1 == "crear" ]; then
 		
 		echo "[ Cambiando a modo local ]"
@@ -23,16 +89,28 @@ if [ $# == 1 ]; then
 		juju status
 
 	elif [ $1 == "destruir" ]; then
-		echo "[ Quitamos la exposición de mediawiki ]"
-		juju unexpose mediawiki
-		echo "[ Eliminamos la relación ]"
-		juju destroy-relation mediawiki:db mysql
-		echo "[ Eliminando el servicio mysql ]"
-		juju destroy-service mysql
-		echo "[ Eliminando el servicio mediawiki ]"
-		juju destroy-service mediawiki
-		echo "[ Destruyendo el entorno ]"
-		sudo juju destroy-environment
+		
+		read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+		case $OPCION in
+			S | s )
+
+				echo "[ Quitamos la exposición de mediawiki ]"
+				juju unexpose mediawiki
+				echo "[ Eliminamos la relación ]"
+				juju destroy-relation mediawiki:db mysql
+				echo "[ Eliminando el servicio mysql ]"
+				juju destroy-service mysql
+				echo "[ Eliminando el servicio mediawiki ]"
+				juju destroy-service mediawiki
+				echo "[ Destruyendo el entorno ]"
+				sudo juju destroy-environment
+			;;
+			N | n ) printf "\n\tCancelando la eliminación del entorno...\n" 
+			;;
+		* ) printf "\n\t [ Ejecución cancelada, selección invalida ] \n";;
+		esac
+
+		
 		
 
 
