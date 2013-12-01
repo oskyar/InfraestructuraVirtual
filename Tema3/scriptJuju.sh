@@ -113,10 +113,6 @@ elif [ $# == 1 ]; then
 		* ) printf "\n [ Ejecución cancelada, selección invalida ] \n";;
 		esac
 
-		
-		
-
-
 	else
 		printf "\"$1\" es incorrecto, escriba: crear o destruir ó ejecute el script sin argumentos\n"
 	fi
