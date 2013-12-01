@@ -113,7 +113,7 @@
 
 			$ wget https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/scriptJuju.sh
 
-	+ Recordar darle permisos de ejecución
+	+ Recuerda darle permisos de ejecución
 
 			$ sudo chmod +x ./scriptJuju.sh
 
