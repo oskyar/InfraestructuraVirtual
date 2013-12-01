@@ -49,7 +49,7 @@
 # Ejercicio 7
 -------------
 
-> 1. Destruir toda la configuración creada anteriormente
+> ###1\. Destruir toda la configuración creada anteriormente
 
 + Empezamos destruyendo el servicio mysql.
 
@@ -63,7 +63,7 @@
 
 ![Destruyendo entorno](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-DestruyendoEntorno.png)
 
-> 2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+> ###2\. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
 
 + Hacemos todos los pasos de nuevo:
 
@@ -93,7 +93,7 @@
 ![Comprobando mediawiki en el navegador](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-ComprobandoEnElNavegador.png)
 
 
-> 3\. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+> ###3\. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
 
 + El script permite un argumento o ninguno.
 
