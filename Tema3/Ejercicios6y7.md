@@ -117,7 +117,7 @@
 
 			$ sudo chmod +x ./scriptJuju.sh
 
-	+ [Ver al script](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/scriptJuju.sh)
+	+ [Ver el script](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/scriptJuju.sh)
 
 
 
