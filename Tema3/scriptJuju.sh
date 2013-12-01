@@ -8,9 +8,9 @@
 
 if [ $# == 0 ]; then
 	
-	printf "\n*******************************"
-	printf "\n** Crear contenedor con Juju **\n"
-	printf "*******************************\n"
+	printf "\n**********************"
+	printf "\n** Script para Juju **\n"
+	printf "**********************\n"
 	printf "\n1. Crear entorno (mediawiki + mysql)"
 	printf "\n2. Destruir todo el entorno (mediawiki + mysql + entorno)"
 	printf "\n3. Salir\n"
@@ -41,12 +41,12 @@ if [ $# == 0 ]; then
 			juju status
 			;;
 		2 )
-			read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+			read -n1 -p "¿Está seguro de que desea destruir el entorno local [S/n]? " OPCION
 			printf "\n"
 
 			while [ $OPCION != "S" ] && [ $OPCION != "s" ] && [ $OPCION != "N" ] && [ $OPCION != "n" ];
 			do 
-				read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+				read -n1 -p "¿Está seguro de que desea destruir el entorno local [S/n]? " OPCION
 				printf "\n"
 			done
 			
@@ -54,7 +54,7 @@ if [ $# == 0 ]; then
 			S | s )
 				echo "[ Quitamos la exposición de mediawiki ]"
 				juju unexpose mediawiki
-				echo "[ Eliminamos la relación ]"
+				echo "[ Eliminando la relación ]"
 				juju destroy-relation mediawiki:db mysql
 				echo "[ Eliminando el servicio mysql ]"
 				juju destroy-service mysql
@@ -63,12 +63,12 @@ if [ $# == 0 ]; then
 				echo "[ Destruyendo el entorno ]"
 				sudo juju destroy-environment
 			;;
-			N | n ) printf "\n...cancelando la eliminación del entorno...\n" 
+			N | n ) printf "[ Cancelada la destrucción del entorno ]" 
 			;;
 			esac
-			;;
+		;;
 		3 ) 
-			echo "Saliendo..."
+			# echo "Saliendo..."
 		;;
 	esac	
 
@@ -92,13 +92,14 @@ elif [ $# == 1 ]; then
 
 	elif [ $1 == "destruir" ]; then
 		
-		read -n1 -p "¿Está seguro de que desea destruir el entorno local?[S/n]" OPCION
+		read -n1 -p "¿Está seguro de que desea destruir el entorno local [S/n]? " OPCION
+		printf "\n"
 		case $OPCION in
 			S | s )
 
-				echo "[ Quitamos la exposición de mediawiki ]"
+				echo "[ Quitando la exposición de mediawiki ]"
 				juju unexpose mediawiki
-				echo "[ Eliminamos la relación ]"
+				echo "[ Eliminando la relación ]"
 				juju destroy-relation mediawiki:db mysql
 				echo "[ Eliminando el servicio mysql ]"
 				juju destroy-service mysql
@@ -107,9 +108,9 @@ elif [ $# == 1 ]; then
 				echo "[ Destruyendo el entorno ]"
 				sudo juju destroy-environment
 			;;
-			N | n ) printf "\n\t...cancelando la eliminación del entorno...\n" 
+			N | n ) printf "\n[ Cancelada la destrucción del entorno ] \n" 
 			;;
-		* ) printf "\n\t [ Ejecución cancelada, selección invalida ] \n";;
+		* ) printf "\n [ Ejecución cancelada, selección invalida ] \n";;
 		esac
 
 		

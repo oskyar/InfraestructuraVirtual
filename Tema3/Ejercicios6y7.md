@@ -93,7 +93,21 @@
 ![Comprobando mediawiki en el navegador](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-ComprobandoEnElNavegador.png)
 
 
-> 3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+> 3\. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
++ El script permite un argumento o ninguno.
+
+	+ Sin ningún argumento:
+
+	![Script sin parámetros](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-3-ScriptSinParametros.png)
+
+	+ Con el argumento `crear`
+
+	![Script con el argumento crear](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-3-ScriptConParametroCrear.png)
+
+	+ Con el argumento `destruir`
+
+	![Script con el argumento crear](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio7-3-ScriptConParametroDestruir.png)
 
 
 
