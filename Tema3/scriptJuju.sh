@@ -105,7 +105,7 @@ elif [ $# == 1 ]; then
 				echo "[ Destruyendo el entorno ]"
 				sudo juju destroy-environment
 			;;
-			N | n ) printf "\n\tCancelando la eliminación del entorno...\n" 
+			N | n ) printf "\n\t...cancelando la eliminación del entorno...\n" 
 			;;
 		* ) printf "\n\t [ Ejecución cancelada, selección invalida ] \n";;
 		esac
@@ -115,7 +115,7 @@ elif [ $# == 1 ]; then
 
 
 	else
-		printf "\"$1\" es incorrecto, escriba: crear o destruir\n"
+		printf "\"$1\" es incorrecto, escriba: crear o destruir ó ejecute el script sin argumentos\n"
 	fi
 else
 	echo "Solo se admite un parámetro"
