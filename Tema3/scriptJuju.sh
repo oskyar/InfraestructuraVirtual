@@ -4,6 +4,8 @@
 # añadir la relacion entre ambos, exponer mediawiki
 # y ver el estado que en el que está.
 
+# Realizado por Oscar Zafra, (oskyar en github)
+
 if [ $# == 0 ]; then
 	
 	printf "\n*******************************"
