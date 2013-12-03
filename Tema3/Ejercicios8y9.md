@@ -17,10 +17,33 @@
 
 > Instalar un contenedor usando virt-install.
 
-* Empezamos instalando virt-install
+* Empezamos instalando virt-install y las librerías que necesita
 
-		$ sudo apt-get install virt-install
+		$ sudo apt-get install virt-viewer virtinst
+
+* Instalamos el manager de virt que nos ayudará mucho mediante la interfaz 
+
+		$ sudo apt-get install virt-manager
+
+**NOTA:** Es posible que una vez instalado `virt-manager` e iniciado pida instalar alguna librería, le damos a que si y reiniciamos el programa.
 
 * Y ahora podemos seguir el [tutorial de creación de contenedores con virt-install](https://fedoraproject.org/wiki/Getting_started_with_virtualization#Creating_a_guest_with_virt-install) que nos ha puesto @jj
 
-		
+
+Comando para instalar el hipervisor:
+
+sudo virt-install --name tails0.21 --ram 512 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
+
+	Argumentos:
+
+	name = nombre de nuestra VM
+	ram = la cantidad de memoria RAM a asignar en MB
+	disk = la dirección en donde queremos crear el archivo o LV (path) y el tamaño (size)
+	location = el medio de instalación, en este caso la URL de Fedora 17 32 bits
+	graphics = el modo gráfico a utilizar
+
+![Instalando con virt-install](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/img/Ejercicio9-InstalaciónVirt-Inst.png)
+
+
+sudo virt-install --name tails0.21 --ram 1024 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
+
