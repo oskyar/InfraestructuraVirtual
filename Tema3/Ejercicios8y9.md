@@ -36,11 +36,11 @@
 
 ######Argumentos:
 
-	name = nombre de nuestra VM
-	ram = la cantidad de memoria RAM a asignar en MB
-	disk = la dirección en donde queremos crear el archivo o LV (path) y el tamaño (size)
-	location = el medio de instalación, en este caso uso cdrom ya que tengo la iso descargada.
-	graphics = el modo gráfico a utilizar
+	**name** = nombre de nuestra VM
+	**ram** = la cantidad de memoria RAM a asignar en MB
+	**disk** = la dirección en donde queremos crear el archivo o LV (path) y el tamaño (size)
+	**location** = el medio de instalación, en este caso uso cdrom ya que tengo la iso descargada.
+	**graphics** = el modo gráfico a utilizar
 
 ![Instalando con virt-install](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio9-InstalaciónVirt-Inst.png)
 
