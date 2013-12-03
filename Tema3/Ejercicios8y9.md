@@ -34,7 +34,7 @@
 
 		$ sudo virt-install --name tails0.21 --ram 512 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
 
-	######Argumentos:
+######Argumentos:
 
 	name = nombre de nuestra VM
 	ram = la cantidad de memoria RAM a asignar en MB
