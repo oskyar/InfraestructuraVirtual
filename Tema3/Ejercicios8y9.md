@@ -27,14 +27,14 @@
 
 **NOTA:** Es posible que una vez instalado `virt-manager` e iniciado pida instalar alguna librería, le damos a que si y reiniciamos el programa.
 
-* Yapodemos seguir el [tutorial de creación de contenedores con virt-install](https://fedoraproject.org/wiki/Getting_started_with_virtualization#Creating_a_guest_with_virt-install) que nos ha puesto @jj
+* Ya podemos seguir el [tutorial de creación de contenedores con virt-install](https://fedoraproject.org/wiki/Getting_started_with_virtualization#Creating_a_guest_with_virt-install) que nos ha puesto @jj
 
 
-Comando para instalar el hipervisor:
+* Comando para instalar el hipervisor:
 
-sudo virt-install --name tails0.21 --ram 512 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
+		$ sudo virt-install --name tails0.21 --ram 512 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
 
-	Argumentos:
+	######Argumentos:
 
 	name = nombre de nuestra VM
 	ram = la cantidad de memoria RAM a asignar en MB
@@ -44,6 +44,4 @@ sudo virt-install --name tails0.21 --ram 512 --disk path=/home/tails0.21,size=5 
 
 ![Instalando con virt-install](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio9-InstalaciónVirt-Inst.png)
 
-
-sudo virt-install --name tails0.21 --ram 1024 --disk path=/home/tails0.21,size=5 --cdrom='/home/oskyar/Escritorio/tails-i386-0.21.iso'  --graphics vnc
 
