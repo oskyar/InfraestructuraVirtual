@@ -120,4 +120,5 @@
 	+ [Ver el script](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/scriptJuju.sh)
 
 
+### [Ejercicios 8 y 9](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios8y9.md)
 

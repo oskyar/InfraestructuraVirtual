@@ -1,3 +1,5 @@
+### [Ejercicios 2 y 3](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios2y3.md)
+
 # Ejercicio 4
 -------------
 
@@ -77,3 +79,5 @@
 
 	![Comparando resultados](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema3/img/Ejercicio5-ComparandoProcesos.png)
 
+
+### [Ejercicios 6 y 7](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema3/Ejercicios6y7.md)
