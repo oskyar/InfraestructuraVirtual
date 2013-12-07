@@ -14,7 +14,7 @@
 #Ejercicio 1
 ------------
 
-> Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.
+> ###Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.
 
 * Instalando Ruby, la última versión estable a 3/12/2013 es la 1.9.1
 
