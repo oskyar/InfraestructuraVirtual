@@ -81,7 +81,9 @@
 	![Buscando Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/SeminarioRuby/img/Ejercicio5-InstalandoVagrant.png)
 
 
-**NOTA: ** Si da error en la instalación, posiblemente es porque no tienes instalado el paquete -dev de vuestra versión de ruby.
+
+**NOTA:** Si da error en la instalación, posiblemente es porque no tienes instalado el paquete -dev de vuestra versión de ruby.
+
 
 * En tal caso instalamos la última actualización de ruby del repositorio y ya se hace una instalación completa con todos los paquetes necesarios.
 
