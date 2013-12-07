@@ -57,3 +57,38 @@
 
 ![Salida ejercicio4](https://raw.github.com/oskyar/InfraestructuraVirtual/master/SeminarioRuby/img/Ejercicio4salida.png)
 
+
+
+#Ejercicio 5
+------------
+
+> ### Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve.
+
+* Busquemos Vagrant
+
+		$ gem search --remote ^Vagrant$ -d
+
+		`^`: indica que debe de empezar por "V" 
+		`$`: indica que termina por "t"
+		`-d`: muestra información adicional de la gema
+
+	![Buscando Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/SeminarioRuby/img/Ejercicio5-BuscandoVagrant.png)
+
+* Instalándola...
+
+		$ sudo gem install vagrant
+
+	![Buscando Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/SeminarioRuby/img/Ejercicio5-InstalandoVagrant.png)
+
+
+* **NOTA: ** Si da error en la instalación, posiblemente es porque no tienes instalado el paquete -dev de vuestra versión de ruby.
+
+	* En tal caso instalamos la última actualización de ruby del repositorio y ya se hace una instalación completa con todos los paquetes necesarios.
+
+		$ sudo apt-get install ruby1.9.3
+
+	
+
+
+
+
