@@ -75,7 +75,7 @@
 #Ejercicio 5
 ------------
 
-> ### Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve.
+> ### Ver si está disponible Vagrant como una gema de Ruby e instalarla.
 
 * Busquemos Vagrant
 
