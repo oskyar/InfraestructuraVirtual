@@ -1,7 +1,20 @@
+###Indice de contenidos:
+
+[Ejercicio 1](https://github.com/oskyar/InfraestructuraVirtual/blob/master/SeminarioRuby/EjerciciosRuby.md#ejercicio-1)
+
+[Ejercicio 2](https://github.com/oskyar/InfraestructuraVirtual/blob/master/SeminarioRuby/EjerciciosRuby.md#ejercicio-2)
+
+[Ejercicio 3](https://github.com/oskyar/InfraestructuraVirtual/blob/master/SeminarioRuby/EjerciciosRuby.md#ejercicio-3)
+
+[Ejercicio 4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/SeminarioRuby/EjerciciosRuby.md#ejercicio-4)
+
+[Ejercicio 5](https://github.com/oskyar/InfraestructuraVirtual/blob/master/SeminarioRuby/EjerciciosRuby.md#ejercicio-5)
+
+
 #Ejercicio 1
 ------------
 
-> Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.
+> ###Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.
 
 * Instalando Ruby, la última versión estable a 3/12/2013 es la 1.9.1
 
@@ -62,7 +75,7 @@
 #Ejercicio 5
 ------------
 
-> ### Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve.
+> ### Ver si está disponible Vagrant como una gema de Ruby e instalarla.
 
 * Busquemos Vagrant
 
