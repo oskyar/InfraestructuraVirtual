@@ -40,7 +40,7 @@
 
 		$ sshfs ubuntu@10.0.3.3:/home/ubuntu remoteHost
 
-* En la siguiente captura podemos observar como se crea el directorio, comprobamos que está vacío, nos conetamos mediante sshfs y vemos que se ha montado el directorio del contenedor. (Aclaración: El contenedor debe de estar arrancado (evidentemente)).
+* En la siguiente captura podemos observar como se crea el directorio, comprobamos que está vacío, nos conectamos mediante sshfs y vemos que se ha montado el directorio del contenedor. (Aclaración: El contenedor debe de estar arrancado (evidentemente)).
 
 ![Ip del puente](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio2-sshfs.png)
 
