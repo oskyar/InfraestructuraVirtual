@@ -58,12 +58,12 @@
 		Para btrfs
 		$ sudo apt-get install btrfs-tools
 
-5. Vamos a montar las imágenes, para ello crearemos los directorios de montaje en `/mnt/` para ello necesitamos permisos de superusuario
+5. Vamos a montar las imágenes, para ello crearemos los directorios de montaje en `/mnt/` por lo que necesitaremos permisos de superusuario
 
 		$ sudo mkdir /mnt/xfs
 		$ sudo mkdir /mnt/btrfs
 
-6. Ahora ya si podemos montar las imágenes con **permisos de superusuario**. (Actualmente estoy en la carpeta donde he creado las imágenes)
+6. Ahora ya si podemos montar las imágenes con **permisos de superusuario**.
 		
 		Formato
 		$ mount -t tipo dispositivo direccion_montaje
@@ -88,7 +88,7 @@
 	![Copiando fichero al sistema de archivos BTRFS](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio4-CopiandoABtrfs.png)
 
 
-	Como podemos comprobar el tiempo de la **CPU** en *XFS* ha sido del **54%** y en *BTRFS* del **7%**, ha sido mucho **menor** en éste **último** aunque el *tiempo* de transferencia ha sido el **mismo**.
+	Como podemos comprobar el tiempo de la **CPU** en *XFS* ha sido del **54%** y en *BTRFS* del **7%**, ha sido mucho **menor** en éste **último** aunque el *tiempo* de transferencia ha sido prácticamente el **mismo**.
 
 
 
