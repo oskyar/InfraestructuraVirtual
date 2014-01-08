@@ -1,4 +1,5 @@
 # Ejercicio 1
+-------------
 
 > ### 1\. ¿Cómo tienes instalado tu disco duro? ¿Usas particiones?  ¿Volúmenes lógicos?
 
@@ -18,6 +19,7 @@
 
 
 # Ejercicio 2
+------------
 
 > ### 1\. Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
 
@@ -41,3 +43,6 @@
 * En la siguiente captura podemos observar como se crea el directorio, comprobamos que está vacío, nos conetamos mediante sshfs y vemos que se ha montado el directorio del contenedor. (Aclaración: El contenedor debe de estar arrancado (evidentemente)).
 
 ![Ip del puente](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio2-sshfs.png)
+
+
+###[Ejercicios 3 y 4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema4/Ejercicios3y4.md)
