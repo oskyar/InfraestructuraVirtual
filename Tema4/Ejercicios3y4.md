@@ -88,4 +88,8 @@
 	![Copiando fichero al sistema de archivos BTRFS](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio4-CopiandoABtrfs.png)
 
 
+	Como podemos comprobar el tiempo de la **CPU** en *XFS* ha sido del **54%** y en *BTRFS* del **7%**, ha sido mucho **menor** en éste **último** aunque el *tiempo* de transferencia ha sido el **mismo**.
+
+
+
 
