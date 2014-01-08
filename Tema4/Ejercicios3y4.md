@@ -51,7 +51,7 @@
 		$ mkfs.xfs imagen1.img
 		$ mkfs.btrfs imagen2.img
 
-	![Formateando las imágenes](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio4-Ejercicio4-FormateandoImagenes.png)
+	![Formateando las imágenes](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio4-FormateandoImagenes.png)
 
 4. Si nos da error al hacer formato, es porque nos faltan las dependencias necesarias. La instalamos y volvemos al paso 3.
 
