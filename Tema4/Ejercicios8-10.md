@@ -32,7 +32,7 @@
 
 			$ azure account download
 
-			![Configurando Azure en Local](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ConfigurandoAzure.png)
+		![Configurando Azure en Local](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ConfigurandoAzure.png)
 
 	5. Seguimos los pasos que nos han indicado en el paso 4 al ejecutar el comando.
 
@@ -46,7 +46,7 @@
 
 		$ azure account list
 
-		![Comprobación de la cuenta de Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ComprobacionCuentaAzure.png)
+	![Comprobación de la cuenta de Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ComprobacionCuentaAzure.png)
 
 4. Procedemos a crear una cuenta de almacenamiento.
 
@@ -54,13 +54,13 @@
 
 		$ azure account storage create oskyar
 
-		![Creando cuenta de almacenamiento en Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-CreandoCuentaAlmacenamiento.png)
+	![Creando cuenta de almacenamiento en Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-CreandoCuentaAlmacenamiento.png)
 	
 	2. Creamos la clave
 
 		$ azure account storage keys list oskyar
 
-		![Creando cuenta de almacenamiento en Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ClaveAlmacenamiento.png)
+	![Creando cuenta de almacenamiento en Azure](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio8-ClaveAlmacenamiento.png)
 	
 	3. Exportamos nuestra cuenta
 
@@ -87,13 +87,13 @@
 
 		$ azure storage container create iv-imagenes -p blob
 
-		![Creando contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-Imagen1.png)
+	![Creando contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-Imagen1.png)
 
 2. Subimos la imagen anterior
 
 		$ azure storage blob upload Ejercicio9-Imagen1.png iv-imagenes
 
-		![Subiendo imagen al contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-SubiendoImagen2.png)
+	![Subiendo imagen al contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-SubiendoImagen2.png)
 
 		Se puede comprobar que la imagen está subida en este enlace `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-Imagen1.png`
 
@@ -102,4 +102,7 @@
 		$ azure storage blob upload Ejercicio9-SubiendoImagen2.png iv-imagenes
 
 		Aquí también se puede comprobar que se ha subido al conteneder en Azure `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png`
+
+
+		
 
