@@ -75,3 +75,31 @@
 		$ echo $AZURE_STORAGE_ACCESS_KEY
 
 5. Y si queremos comprobarlo mediante la web, hay que entrar en https://manage.windowsazure.com/
+
+
+
+
+# Ejercicio 8
+
+> ###Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
+
+1. Vamos a crear un contenedor desde el CLI de Azure.
+
+		$ azure storage container create iv-imagenes -p blob
+
+		![Creando contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-Imagen1.png)
+
+2. Subimos la imagen anterior
+
+		$ azure storage blob upload Ejercicio9-Imagen1.png iv-imagenes
+
+		![Subiendo imagen al contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-SubiendoImagen2.png)
+
+		Se puede comprobar que la imagen está subida en este enlace `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-Imagen1.png`
+
+3. Subimos a Azure del resultado de la subida de la primera imagen
+
+		$ azure storage blob upload Ejercicio9-SubiendoImagen2.png iv-imagenes
+
+		Aquí también se puede comprobar que se ha subido al conteneder en Azure `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png`
+
