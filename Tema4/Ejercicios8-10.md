@@ -95,14 +95,14 @@
 
 	![Subiendo imagen al contenedor](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema4/img/Ejercicio9-SubiendoImagen2.png)
 
-	Se puede comprobar que la imagen está subida en este enlace `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-Imagen1.png`
+	Se puede comprobar que la imagen está subida en este enlace http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-Imagen1.png
 
-3. Subimos a Azure del resultado de la subida de la primera imagen
+3. Subimos a Azure el resultado de la subida de la primera imagen.
 
 		$ azure storage blob upload Ejercicio9-SubiendoImagen2.png iv-imagenes
 
-	Aquí también se puede comprobar que se ha subido al conteneder en Azure `http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png`
+	Aquí también se puede comprobar que se ha subido al conteneder en Azure http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png
 
 
-		
+
 
