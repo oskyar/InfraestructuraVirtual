@@ -127,7 +127,7 @@
 
 > ###Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
 
-~~~ Ruby
+::: ruby
 
 #! /usr/bin/ruby
 
@@ -157,8 +157,8 @@ containers.each do |cont|
 			contBlobs+=1
 		end		
 	end
+	#Upload a blob
 	content = File.open('lista_archivos.txt', 'rb') { |file| file.read }
 	azure_blob_service.create_block_blob(cont.name, "lista_archivos.txt", content)
 end
 
-~~~
