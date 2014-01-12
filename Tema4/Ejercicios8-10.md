@@ -79,7 +79,7 @@
 
 
 
-# Ejercicio 8
+# Ejercicio 9
 
 > ###Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
 
@@ -104,5 +104,16 @@
 	Aquí también se puede comprobar que se ha subido al conteneder en Azure http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png
 
 
+4. Creamos un contenedor de archivos de texto plano público
 
+		$ azure storage container create iv-archivos -p blob
 
+5. Archivos subidos al contenedor de archivos:
+
+		http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios1y2.md
+		http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios3y4.md
+		http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios8-10.md
+
+	y subido al contenedor de imágenes:
+
+		http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-CreandoContenedorArchivos.png
