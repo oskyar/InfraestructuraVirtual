@@ -101,7 +101,9 @@
 
 		$ azure storage blob upload Ejercicio9-SubiendoImagen2.png iv-imagenes
 
-	Aquí también se puede comprobar que se ha subido al conteneder en Azure http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png
+	Aquí también se puede comprobar que se ha subido al conteneder en Azure 
+
+	http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-SubiendoImagen2.png
 
 
 4. Creamos un contenedor de archivos de texto plano público
@@ -111,9 +113,16 @@
 5. Archivos subidos al contenedor de archivos:
 
 	http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios1y2.md
+
 	http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios3y4.md
+
 	http://oskyar.blob.core.windows.net/iv-archivos/Ejercicios8-10.md
 
 	y subido al contenedor de imágenes:
 
 	http://oskyar.blob.core.windows.net/iv-imagenes/Ejercicio9-CreandoContenedorArchivos.png
+
+
+# Ejercicio 10
+
+> ###Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
