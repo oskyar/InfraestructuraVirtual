@@ -127,7 +127,7 @@
 
 > ###Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
 
-:::ruby
+::: Ruby
 
 	#! /usr/bin/ruby
 
@@ -162,3 +162,5 @@
 		azure_blob_service.create_block_blob(cont.name, "lista_archivos.txt", content)
 	end
 
+
+Para ver el código fuente [pinchar aquí](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema4/ejercicio10.rb)
