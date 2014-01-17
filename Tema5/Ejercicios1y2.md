@@ -105,3 +105,4 @@
 
 	![FreeBSD listo para iniciar](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej2-9-MaquinaInstalada.png)
 
+
