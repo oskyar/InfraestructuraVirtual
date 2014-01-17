@@ -3,10 +3,12 @@
 ### Ejercicio 10
 
 > Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
-	oskyar@oskyar-M60Vp:~/InfraestructuraVirtual$ kvm-ok 
-	INFO: /dev/kvm exists
-	KVM acceleration can be used
 
+~~~
+oskyar@oskyar-M60Vp:~/InfraestructuraVirtual$ kvm-ok 
+INFO: /dev/kvm exists
+KVM acceleration can be used
+~~~
 
 ### Ejercicio 12
 
