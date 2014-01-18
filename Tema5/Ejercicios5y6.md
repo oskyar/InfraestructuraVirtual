@@ -169,7 +169,20 @@ _Tabla de contenidos_
         
         	![Dentro de Juju-Gui](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej6-4.juju-gui.png)
 		
+        14. Peeeero, nos pide que instalemos **NGINX** por lo que buscaremos el charm y lo añadiremos.
         
+       	 ![Buscando NGINX](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej6-5.BuscandoNGINX.png)
+
+		15. Una vez añadido nos vamos a nuestro terminal y comprobamos que se haya añadido el servicio y lo exponemos.
+		
+        		$ sudo juju status
+                $ sudo juju expose nginx
+                
+          ![Exponiendo y desplegado](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej6-6.ExpuestoNGINX.png)
+
+		16. Ya faltaría configurar nginx dentro de juju para poder visualizarlo desde el navegador y listo.
+
+
 # Ejercicio 7
 -------------
 
