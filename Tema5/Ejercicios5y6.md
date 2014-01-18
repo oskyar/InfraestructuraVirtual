@@ -68,7 +68,7 @@ _Tabla de contenidos_
 		Orden:
 			$ azure vm endpoint create ubuntuNGINX 80 80
             
-        ![Creando EndPoint](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej6-6.CreandoEndPoint.png)
+        ![Creando EndPoint](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej5-6.CreandoEndPoint.png)
         
 7. Desde la VM tenemos que poner en funcionamiento el servicio NGINX mediante
 
