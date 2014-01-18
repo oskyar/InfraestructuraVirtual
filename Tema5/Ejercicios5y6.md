@@ -106,7 +106,7 @@ _Tabla de contenidos_
 	
     		$ sudo juju init
             
-    2. Creamos certificados para azure con openssl
+    2. Creamos certificados para **azure** con **openssl**
     
     		$ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
             $ openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
@@ -149,7 +149,7 @@ _Tabla de contenidos_
 
 		9. Lo exponemos para poder utilizarlo:
        
-       			$ sudo juju deploy --to 0 juju-gui
+       			$ sudo juju expose juju-gui
 
 		10. Para comprobar la dirección que nos ha asignado `juju` la miramos con:
 
@@ -169,6 +169,7 @@ _Tabla de contenidos_
         
         	![Dentro de Juju-Gui](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej6-4.juju-gui.png)
 		
+        
 # Ejercicio 7
 -------------
 
