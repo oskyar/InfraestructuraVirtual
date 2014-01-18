@@ -53,11 +53,11 @@ _Tabla de contenidos_
 
 	5. Procedemos a la instalación del sistema
 
-		![Instalando Debian en VMK](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/Ej2-1-InstalandoDebianVMK.png)
+		![Instalando Debian en VMK](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej2-1-InstalandoDebianVMK.png)
 
     6. Durante el proceso nos hará preguntas de configuración, se van respondiendo hasta llegar al final.
 
-        ![Terminada Instalación Debian](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/Ej2-2-TerminadaInstalacionDebian.png)
+        ![Terminada Instalación Debian](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej2-2-TerminadaInstalacionDebian.png)
 
 2. Instalamos otro sistema, por ejemplo... [Damn Small Linux, SliTaz](http://www.damnsmalllinux.org/download.html)
 	* Y hacemos los mismos pasos:
