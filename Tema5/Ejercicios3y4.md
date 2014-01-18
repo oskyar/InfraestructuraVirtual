@@ -57,6 +57,8 @@ _Tabla de Contenidos_
 
  	![Empieza la instalación de Debian](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej4-6.EmpezandoInstalacion.png)
 
+12. Se van rellenando, seleccionando y configurando lo que nos vaya pidiendo la instalación (Ante la duda, la opción por defecto).
+
 
 
 
