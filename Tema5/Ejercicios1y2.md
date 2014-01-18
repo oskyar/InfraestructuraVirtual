@@ -1,7 +1,7 @@
 # Ejercicio 1
 -------------
 
-> ### 1. Instalar los paquetes necesarios para usar KVM. Se pueden seguir [estas instrucciones](https://wiki.debian.org/KVM#Installation). Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
+> ### Instalar los paquetes necesarios para usar KVM. Se pueden seguir [estas instrucciones](https://wiki.debian.org/KVM#Installation). Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
 
 * Tan solo hay que usar la orden 
 
@@ -50,18 +50,18 @@
 	5. Procedemos a la instalación del sistema
 
 		![Instalando Debian en VMK](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/Ej2-1-InstalandoDebianVMK.png)
-        
+
     6. Durante el proceso nos hará preguntas de configuración, se van respondiendo hasta llegar al final.
-    	
+
         ![Terminada Instalación Debian](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/Ej2-2-TerminadaInstalacionDebian.png)
-        
+
 2. Instalamos otro sistema, por ejemplo... [Damn Small Linux, SliTaz](http://www.damnsmalllinux.org/download.html)
 	* Y hacemos los mismos pasos:
- 
+
 			1. Creación del disco duro virtual
 			2. Descarga del SO
 			3. Mediante KVM instalamos el sistema
-			
+
 	* Pasos:
             1. $ qemu-img create -f qcow2 dsl.qcow2 2G
 			2. $ wget ftp://distro.ibiblio.org/pub/linux/distributions/damnsmall/release_candidate/dsl-4.11.rc2.iso
@@ -104,5 +104,4 @@
 9. Pinchamos en ==CREAR== y ya tenemos nuestra máquina lista para ejecutarla.
 
 	![FreeBSD listo para iniciar](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema5/img/ej2-9-MaquinaInstalada.png)
-
 
