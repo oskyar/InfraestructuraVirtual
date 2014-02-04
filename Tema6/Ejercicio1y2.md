@@ -1,7 +1,3 @@
-_Tabla de contenidos_
-
-[TOC]
-
 # Ejercicio 1
 -------------
 
