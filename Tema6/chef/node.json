@@ -5,9 +5,8 @@
     },
 
     "nginx": {
-    	"version"   : "1.4.1",
         "user"      : "www-data",
-    	"port": "80"
+    	"port"		: "80"
     	},
 
 	"run_list": [ "recipe[nano]", "recipe[git]", "recipe[proyectosGit]", "recipe[nginx]" ]
