@@ -1,3 +1,8 @@
 {
-	"run_list": [ "recipe[emacs]" ]
+  
+  "proyectosGit": {
+        "name"      : "proyectosGit"
+    },
+
+	"run_list": [ "recipe[nano]", "recipe[git]", "recipe[proyectosGit]" ]
 }
