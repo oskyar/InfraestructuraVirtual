@@ -10,5 +10,5 @@
     	"port": "80"
     	},
 
-	"run_list": [ "recipe[nano]", "recipe[git]", "recipe[proyectosGit]" ]
+	"run_list": [ "recipe[nano]", "recipe[git]", "recipe[proyectosGit]", "recipe[nginx]" ]
 }
