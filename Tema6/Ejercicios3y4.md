@@ -57,7 +57,7 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
 
     		$ sudo pip install paramiko PyYAML jinja2 httplib2 ansible
 
-2. Creamos el archivo de inventario y añadiremos la url de nuestros sistemas (en este caso azure). 
+2. Creamos el archivo de inventario y anadiremos la url de nuestros sistemas (en este caso azure). 
     
     * Aquí es dónde guardaremos las URL's para conectarnos con nuestros sistemas remotamente.
 
@@ -76,7 +76,7 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
 
         $ ssh-copy-id -i ~/.ssh/id_rsa.pub oskyar@app-conf2.cloudapp.net
 
-	![Añadiendo Clave SSH a la máquina remota](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej4-1.AñadiendoClaveSSH.png)
+	![Añadiendo Clave SSH a la máquina remota](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej4-1.AnadiendoClaveSSH.png)
 
 5. Ya podemos comprobar si desde la máquina anfitrión se puede acceder a las máquinas externas
 
