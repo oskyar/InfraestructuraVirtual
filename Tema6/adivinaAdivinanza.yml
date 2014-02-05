@@ -1,0 +1,7 @@
+---
+- hosts: azure
+  sudo: yes
+  tasks:
+    - name: Descargando JDK
+      wget: https://dl.dropboxusercontent.com/u/3216105/jdk-7u45-linux-x64.tar.gz state=present
+      dest: ~/

@@ -1,4 +1,4 @@
-###[Ejercicios 1 y 2]()
+###[Ejercicios 1 y 2](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios1y2.md)
 
 # Ejercicio 3
 -------------
@@ -101,3 +101,5 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
 
 En caso de tener todos las máquinas activas dentro del grupo **azure** haría la misma instalación para todas las máquina y de una sola vez, todo un lujo y un ahorro de tiempo ejecutando las mismas órdenes repetidas veces y teniendo que esperar a que alguna instalación se complete para iniciar la siguiente.
 
+
+###[Ejercicios 5 y 6](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios5y6.md)
