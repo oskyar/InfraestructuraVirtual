@@ -99,5 +99,5 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
 	* Vemos que pone "**success**" que quiere decir que se ha clonado correctamente.
     * Para poder clonar un repositorio con git hay que indicar el repositorio con **repo**, la carpeta de destino con **dest** y la versión en caso de querer alguna especifica con **version**
 
-En caso de tener todos las máquinas activas dentro del grupo **azure** haría la misma instalación para todas las máquina y de una sola vez.
+En caso de tener todos las máquinas activas dentro del grupo **azure** haría la misma instalación para todas las máquina y de una sola vez, todo un lujo y un ahorro de tiempo ejecutando las mismas órdenes repetidas veces y teniendo que esperar a que alguna instalación se complete para iniciar la siguiente.
 
