@@ -27,10 +27,12 @@
     
     		$ ansible-playbook adivinaAdivinanza.yml
         
-        **Observaciones:** El servidor al que me conecto es **ansible-adivina.cloudapp.net** de Azure (en el playbook queda definido con "_hosts: adivina_" ).
-        Para ver ejemplos de algunas las tareas que se pueden crear con ansible-playbook ir [aquí](https://gist.github.com/marktheunissen/2979474)
+	**Observaciones:** El servidor al que me conecto es **ansible-adivina.cloudapp.net** de Azure (en el playbook queda definido con "_hosts: adivina_" ).
+        
+	Para ver ejemplos de algunas las tareas que se pueden crear con ansible-playbook ir [aquí](https://gist.github.com/marktheunissen/2979474)
 
 	Aquí va una captura de la prueba de fuego, comprobando de que el script funciona al 100%.
+    
     ![Aprendiendo a usar ansible-playbook](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-1.UsandoPlaybook.png)
     
     ![Aprendiendo a usar ansible-playbook 2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-2.UsandoPlaybook2.png)
@@ -54,12 +56,15 @@
 
 1. Procederé a descargar la imagen de Debian con Vagrant. (Se pueden ver más imágenes que soporta [aquí](http://www.vagrantbox.es/))
 		
-	Formato:
-    	$ vagrant box add nombre_maquina imagen_maquina
+    Formato:
+
+		$ vagrant box add nombre_maquina imagen_maquina
+
     Orden:
+
 		$ vagrant box add debian-squeeze http://ergonlogic.com/files/boxes/debian-current.box
 
-	![Descargando Debian con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-1.DescargandoDebianConVagrant.png)
+    ![Descargando Debian con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-1.DescargandoDebianConVagrant.png)
 
 	Si en el terminal nos sale el siguiente texto (*imagen siguiente*), quiere decir que ya se ha terminado la descarga.
 	
@@ -68,8 +73,11 @@
 2. Ahora crearemos el archivo de configuraciones **Vagrantfile** con la siguiente orden:
     
     Formato:
+
     	$ vagrant init nombre_maquina
+
     Orden:
+
     	$ vagrant init debian-squeeze
 
 	![Creando archivo de configuraciones VagrantFile](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-3.ArchivoConfiguracionVagrantfile.png)
