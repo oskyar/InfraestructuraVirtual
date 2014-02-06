@@ -9,9 +9,10 @@
 		$ ssh usuario@url_maquina_virtual
 
 	Y ahora accedemos a nuestra máquina
+        
         $ ssh oskyar@app-conf2.cloudapp.net
 
-        	Ponemos la contraseña y ya estaremos dentro.
+	Ponemos la contraseña y ya estaremos dentro.
 
 2. Instalamos Chef en nuestra VM.
 
@@ -47,7 +48,7 @@
 
 	###**1. solo.rb**  [(ver)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/chef/solo.rb)
 	##### Explicación + Contenido:
-     Indica la carpeta raíz en donde están los archivos de configuración
+	Indica la carpeta raíz en donde están los archivos de configuración
 
     		file_cache_path "/home/oskyar/InfraestructuraVirtual/Tema6/chef"
 
@@ -84,7 +85,7 @@
           }
 
  	###**3. metadata.rb**  [(ver)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/chef/cookbooks/git/metadata.rb)
-		##### Explicación + Contenido:
+	##### Explicación + Contenido:
 	* Aquí indicamos datos sobre el autor, correo, descripción y la receta que se va a instalar con una descripción.
 
     **NOTA: ** Si este archivo no existe, la instalación dará error.
@@ -97,8 +98,8 @@
             recipe "git", "Receta para instalar GIT"
 
  	###**4. default.rb**  [(ver)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/chef/cookbooks/git/recipes/default.rb)
-		##### Explicación + Contenido:
-		* En este archivo se indican los paquetes que vamos a instalar, en este caso solo git. También necesita uno por aplicación dentro de la carpeta recipes.
+	##### Explicación + Contenido:
+	* En este archivo se indican los paquetes que vamos a instalar, en este caso solo git. También necesita uno por aplicación dentro de la carpeta recipes.
 
     		package git
 
@@ -127,10 +128,15 @@
 * Para iniciar o reiniciar el servicio de **nginx** ejecutamos una de las siguientes órdenes:
 
     **Iniciar:**
+    
     	$ sudo service start nginx
+    
     **Reiniciar:**
+	
 		$ sudo service restart nginx
+	
 	**Parar:**
+    
     	$ sudo service stop nginx
 
 Y para comprobar que funciona vamos a usar curl para ver la página que establece nginx al arrancar el servidor.
