@@ -105,7 +105,7 @@
 
 	* _*Posiblemente se puedan instalar todas las aplicaciones un mismo archivo (metadata y default) y no haya que crear una por aplicación, pero he preferido hacerlo así para que sea más fácil de entender.*_
 
-3. Se procede a la instalación con el siguiente comando (hay que tener permisos de superusuario o ser root)
+3\. Se procede a la instalación con el siguiente comando (hay que tener permisos de superusuario o ser root)
 
 		$ sudo chef-solo -c ~/InfraestructuraVirtual/Tema6/chef/solo.rb
 
