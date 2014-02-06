@@ -13,6 +13,6 @@
 
 - name: Borrando carpeta de apache-maven-3
   action: shell rm -r apache*
-
+  # Añado estas líneas de export al archivo ~/.bash_profile para que las variables seran persistentes, es decir, siempre que se inicie este usuario, las variables se inicializarán. Necesarias para la ejecución de la aplicación.
 - name: Configurando variables de ENTORNO
   action: shell echo 'export M2_HOME=/usr/local/apache-maven/apache-maven-3.1.1' >> /home/oskyar/.bash_profile ; echo 'export M2=$M2_HOME/bin' >> /home/oskyar/.bash_profile; echo 'export MAVEN_OPTS="-Xms256m -Xmx512m"' >> /home/oskyar/.bash_profile ; echo 'export JAVA_HOME=/usr/lib/jvm/jdk1.7.0' >> /home/oskyar/.bash_profile ; echo 'export PATH=$JAVA_HOME/bin:$M2:$PATH' >> /home/oskyar/.bash_profile
