@@ -48,11 +48,16 @@
 	###**1. solo.rb**  [(ver)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/chef/solo.rb)
 	##### Explicación + Contenido:
      Indica la carpeta raíz en donde están los archivos de configuración
-        file_cache_path "/home/oskyar/InfraestructuraVirtual/Tema6/chef"
+    
+    		file_cache_path "/home/oskyar/InfraestructuraVirtual/Tema6/chef"
+    
     Indica el path en el que se encuentra el "libro de cocina"
-        cookbook_path "/home/oskyar/InfraestructuraVirtual/Tema6/chef/cookbooks"
+    
+    		cookbook_path "/home/oskyar/InfraestructuraVirtual/Tema6/chef/cookbooks"
+    
     Indica dónde se encuentra el archivo con los atributos .json
-        json_attribs "/home/oskyar/InfraestructuraVirtual/Tema6/chef/node.json"
+        	
+            json_attribs "/home/oskyar/InfraestructuraVirtual/Tema6/chef/node.json"
 
     ###**2. node.json**  [(ver)](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/chef/node.json)
     ##### Explicación + Contenido:
