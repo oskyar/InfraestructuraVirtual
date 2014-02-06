@@ -107,40 +107,40 @@
 
 3\. Se procede a la instalación con el siguiente comando (hay que tener permisos de superusuario o ser root)
 
-		$ sudo chef-solo -c ~/InfraestructuraVirtual/Tema6/chef/solo.rb
+	$ sudo chef-solo -c ~/InfraestructuraVirtual/Tema6/chef/solo.rb
 
-    Si nos sale el siguiente error como en la siguiente imagen, debemos de ejecutar el comando que viene después de la imagen.
+Si nos sale el siguiente error como en la siguiente imagen, debemos de ejecutar el comando que viene después de la imagen.
 
-	![Error al instalar NGINX](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-2.ErrorInstalandoNginx.png)
+![Error al instalar NGINX](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-2.ErrorInstalandoNginx.png)
 
-	* Ejecutamos la siguiente orden para que podamos instalar nginx sin errores.
+* Ejecutamos la siguiente orden para que podamos instalar nginx sin errores.
 
-    		$ sudo dpkg --configure -a
+    	$ sudo dpkg --configure -a
 
-	* Probamos de nuevo a ejecutar el comando para instalar los programas con chef-solo.
+* Probamos de nuevo a ejecutar el comando para instalar los programas con chef-solo.
 
-	![NGINX instalado con éxito](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-3.NginxInstalado.png)
+![NGINX instalado con éxito](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-3.NginxInstalado.png)
 
-	Y ya si podemos ver que se ha instalado todo con éxito, (A mi me pone en algunos action install (up to date), esto quiere decir que ya lo tengo instalado y actualizado).
+Y ya si podemos ver que se ha instalado todo con éxito, (A mi me pone en algunos action install (up to date), esto quiere decir que ya lo tengo instalado y actualizado).
 
 * Comprobamos que se han instalado bien los programas, como por ejemplo **nginx** viendo que el *demonio* se puede lanzar y que nos muestra la página de inicio.
 
 * Para iniciar o reiniciar el servicio de **nginx** ejecutamos una de las siguientes órdenes:
 
-    **Iniciar:**
-    
-    	$ sudo service start nginx
-    
-    **Reiniciar:**
-	
-		$ sudo service restart nginx
-	
-	**Parar:**
-    
-    	$ sudo service stop nginx
+**Iniciar:**
+
+    $ sudo service start nginx
+
+**Reiniciar:**
+
+	$ sudo service restart nginx
+
+**Parar:**
+
+    $ sudo service stop nginx
 
 Y para comprobar que funciona vamos a usar curl para ver la página que establece nginx al arrancar el servidor.
 
-		$ curl localhost
+	$ curl localhost
 
 ![Probando NGINX](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-4.ProbandoNginx.png)
