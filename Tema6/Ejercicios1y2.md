@@ -144,3 +144,6 @@ Y para comprobar que funciona vamos a usar curl para ver la página que establec
 	$ curl localhost
 
 ![Probando NGINX](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej2-4.ProbandoNginx.png)
+
+
+### [Ejercicios 3-4](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios3y4.md)
