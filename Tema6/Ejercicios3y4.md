@@ -23,18 +23,18 @@
 			]
 		}
 
-Esta estructura en YAML se puede escribir de varias formas, yo voy a mostrar una.
+* Esta estructura en YAML se puede escribir de varias formas, yo voy a mostrar una.
 
-    - uno: "dos"
-    tres:
-        - 4
-        - 5
-        - "Seis"
-        -
-          - siete: 8
-            nueve:
-              - 10
-              - 11
+	    - uno: "dos"
+	    tres:
+	        - 4
+	        - 5
+	        - "Seis"
+	        -
+	          - siete: 8
+	            nueve:
+	              - 10
+	              - 11
 
 Este ejemplo sería una "**lista de arrays asociativos**".
 
@@ -67,7 +67,7 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
 
 		![Mostrando archivo Ansible Hosts](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej4-0.ArchivoAnsibleHosts.png)
         
-        Como podeéis ver, le he puesto antes una etiqueta entre corchetes (**[azure]**), esto sirve para poder referirnos a todos las máquinas a la vez que estén dentro de azure.
+        Como podéis ver, le he puesto antes una etiqueta entre corchetes (**[azure]**), esto sirve para poder referirnos a todos las máquinas a la vez que estén dentro de azure.
         
 3. **Exportamos** el archivo inventario a una variable **global** para que al ejecutar ansible recoja la información.
 
