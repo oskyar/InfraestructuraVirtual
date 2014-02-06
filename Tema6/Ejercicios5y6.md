@@ -78,8 +78,12 @@
 
 		$ vagrant up
 
+	![Lanzando debian con vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-4.LanzandoVagrant.png)
 
+4. Y nos conectamos mediante ssh.
 
-
+		$ vagrant ssh
+        
+    ![Entrando a Debian con Vagrant ssh](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-5.VagrantSSH.png)
 
 ###[Ejercicios 7 y 8](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios7y8.md)
