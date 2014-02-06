@@ -1,0 +1,18 @@
+---
+- name: Descargando Maven3.1.1
+  action: shell /usr/bin/wget http://ftp.cixug.es/apache/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+
+- name: Creamos el directorio para Maven 3.1.1 (/usr/local/apache-maven)
+  action: shell /bin/mkdir -p /usr/local/apache-maven
+
+- name: Descomprimiendo Maven 3.1.1
+  action: shell /bin/tar -xvf apache-maven-3.1.1-bin.tar.gz
+
+- name: Copiando contenido al directorio de Maven
+  action: shell /bin/cp -r apache-maven-3.1.1 /usr/local/apache-maven/
+
+- name: Borrando carpeta de apache-maven-3
+  action: shell rm -r apache*
+
+- name: Configurando variables de ENTORNO
+  action: shell echo 'export M2_HOME=/usr/local/apache-maven/apache-maven-3.1.1' >> /home/oskyar/.bash_profile ; echo 'export M2=$M2_HOME/bin' >> /home/oskyar/.bash_profile; echo 'export MAVEN_OPTS="-Xms256m -Xmx512m"' >> /home/oskyar/.bash_profile ; echo 'export JAVA_HOME=/usr/lib/jvm/jdk1.7.0' >> /home/oskyar/.bash_profile ; echo 'export PATH=$JAVA_HOME/bin:$M2:$PATH' >> /home/oskyar/.bash_profile

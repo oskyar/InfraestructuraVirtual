@@ -1,7 +1,22 @@
 ---
-- hosts: azure
+- hosts: adivina
   sudo: yes
   tasks:
-    - name: Descargando JDK
-      wget: https://dl.dropboxusercontent.com/u/3216105/jdk-7u45-linux-x64.tar.gz state=present
-      dest: ~/
+    #Archivo de instalación para jdk
+    - include: jdk.yml
+    #Archivo de instalación de maven
+    - include: maven.yml
+    #Instalando git
+    - name: Instalando control de version GIT
+      apt: pkg=git state=present
+    #Descargando aplicación del repositorio de Git.
+    - name: Descargando repositorio de la aplicación.
+      git: repo=https://github.com/oskyar/Practica3-VirtualMachine.git dest=adivinaAdivinanza
+    #Corriendo la aplicación.
+    - name: Instalando dependencias para la aplicación con maven
+      action: shell cd adivinaAdivinanza; /usr/local/apache-maven/apache-maven-3.1.1/bin/mvn install; /usr/local/apache-maven/apache-maven-3.1.1/bin/mvn package; 
+    #Al terminar el despliegue la aplicación seguirá corriendo en segundo plano.
+    - name: Desplegando la aplicación "Adivina Adivinanza"
+      command: chdir=/home/oskyar/adivinaAdivinanza nohup sh target/bin/webapp > ./salida.txt 2> /dev/null &
+      async: 50
+      poll: 0

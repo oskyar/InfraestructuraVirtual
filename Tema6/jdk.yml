@@ -1,0 +1,28 @@
+---
+
+- name: Descargando JDK
+  action: shell /usr/bin/wget -O jdk.tar.gz https://dl.dropboxusercontent.com/u/3216105/jdk-7u45-linux-x64.tar.gz
+
+- name: Descomprimiendo JDK.tar.gz
+  action: shell /bin/tar -xvf jdk.tar.gz
+
+- name: Creando directorio /usr/lib/jvm/jdk1.7.0
+  action: shell /bin/mkdir -p /usr/lib/jvm/jdk1.7.0
+
+- name: Copiando archivos de JDK a /usr/lib/jvm/jdk1.7.0
+  action: shell /bin/cp -r jdk1.7.0_45/* /usr/lib/jvm/jdk1.7.0/
+
+- name: Configurando alternativa JAVA de JDK
+  action: shell /usr/bin/update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1
+
+- name: Configurando alternativa JAVAC de JDK
+  action: shell /usr/bin/update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1
+
+- name: Configurando alternativa JAVAWS de JDK
+  action: shell /usr/bin/update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1      
+
+- name: Configurando alternativas por defecto de java
+  action: shell /usr/bin/update-alternatives --config java
+
+- name: Borrando carpeta de descarga de java
+  action: shell rm -r jdk*
