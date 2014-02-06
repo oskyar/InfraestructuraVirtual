@@ -40,9 +40,46 @@
     ![Aplicación en funcionamiento](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-2.MonstrandoAplicacion.png)
     
 
-
-
 #####2. ¿Ansible o chef? -- > Contestado en el issue. [Ver](https://github.com/IV-GII/GII-2013/issues/131#issuecomment-34283523)
+
+
+---
+
+---
+
+# Ejercicio 6
+-------------
+
+> ### Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
+
+1. Procederé a descargar la imagen de Debian con Vagrant. (Se pueden ver más imágenes que soporta [aquí](http://www.vagrantbox.es/))
+		
+	Formato:
+    	$ vagrant box add nombre_maquina imagen_maquina
+    Orden:
+		$ vagrant box add debian-squeeze http://ergonlogic.com/files/boxes/debian-current.box
+
+	![Descargando Debian con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-1.DescargandoDebianConVagrant.png)
+
+	Si en el terminal nos sale el siguiente texto (*imagen siguiente*), quiere decir que ya se ha terminado la descarga.
+	
+    ![Descargar de la imagen terminada con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-2.DescargaTerminada.png)
+
+2. Ahora crearemos el archivo de configuraciones **Vagrantfile** con la siguiente orden:
+    
+    Formato:
+    	$ vagrant init nombre_maquina
+    Orden:
+    	$ vagrant init debian-squeeze
+
+	![Creando archivo de configuraciones VagrantFile](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-3.ArchivoConfiguracionVagrantfile.png)
+
+3. Ya podemos arrancar nuestra máquina con:
+
+		$ vagrant up
+
+
+
 
 
 ###[Ejercicios 7 y 8](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios7y8.md)
