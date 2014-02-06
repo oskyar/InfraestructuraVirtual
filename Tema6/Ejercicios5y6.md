@@ -35,6 +35,10 @@
     
     ![Aprendiendo a usar ansible-playbook 2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-2.UsandoPlaybook2.png)
     
+    y aquí podemos ver en funcionamiento la aplicación:
+    
+    ![Aplicación en funcionamiento](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-2.MonstrandoAplicacion.png)
+    
 
 
 
