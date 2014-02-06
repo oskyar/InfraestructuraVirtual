@@ -52,34 +52,11 @@
 
 > ### Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
 
-0. Instalamos Vagrant, para ello lo descargaremos desde su [página web](http://www.vagrantup.com/) que está más actualizado.
-
-	[Descargar Vagrant ubuntu 64 bits](https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.3_x86_64.deb)
-
-	1. Si teníamos ya instalado vagrant y fue mediante las gemas de ruby, lo desinstalamos de la siguiente forma:
-		Formato:	
-            $ gem uninstall nombre_gema
-        Orden:
-        	$ gem uninstall vagrant
-
-	2. Intentamos ejecutar "vagrant" y si lo busca en la ruta **/usr/local/bin**, nos dará error porque lo hemos desinstalado, por lo que procederemos a  instalar la versión de vagrant que nos hemos descargado con:
-	 	
-        En mi caso (busca la ruta donde lo hayas descargado):
-			$ sudo dpkg -i ~/Descargas/vagrant_1.4.3_x86_64.deb
-            
-        Y ahora vamos a crear un enlace simbólico duro para que no nos diga que no lo tenemos instalado cuando eso no es cierto.
-        
-        	$ sudo ln /usr/bin/vagrant /usr/local/bin
-        
-        Y ya tenemos instalado Vagrant a la última versión, por lo que no tendremos problemas con la configuración de **Vagrantfile**.
 1. Procederé a descargar la imagen de Debian con Vagrant. (Se pueden ver más imágenes que soporta [aquí](http://www.vagrantbox.es/))
 		
 	Formato:
-    
     	$ vagrant box add nombre_maquina imagen_maquina
-        
     Orden:
-    
 		$ vagrant box add debian-squeeze http://ergonlogic.com/files/boxes/debian-current.box
 
 	![Descargando Debian con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-1.DescargandoDebianConVagrant.png)
@@ -91,11 +68,8 @@
 2. Ahora crearemos el archivo de configuraciones **Vagrantfile** con la siguiente orden:
     
     Formato:
-    
     	$ vagrant init nombre_maquina
-        
     Orden:
-    
     	$ vagrant init debian-squeeze
 
 	![Creando archivo de configuraciones VagrantFile](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-3.ArchivoConfiguracionVagrantfile.png)
@@ -104,12 +78,8 @@
 
 		$ vagrant up
 
-	![Lanzando debian con vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-4.LanzandoVagrant.png)
 
-4. Y nos conectamos mediante ssh.
 
-		$ vagrant ssh
-        
-    ![Entrando a Debian con Vagrant ssh](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej6-5.VagrantSSH.png)
+
 
 ###[Ejercicios 7 y 8](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios7y8.md)

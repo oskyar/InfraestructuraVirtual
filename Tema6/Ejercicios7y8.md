@@ -47,4 +47,64 @@
 
 			$ vagrant provision
             
-		![Lanzando la máquina](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej7-3.VagrantProvision.png)
+    ![Lanzando la máquina](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej7-3.VagrantProvision.png)
+        
+        
+# Ejercicio 8
+-------------
+
+> ###Configurar tu máquina virtual usando vagrant con el provisionador ansible
+
+* Vamos a seguir los mismos pasos que el ejercicio anterior pero ahora añadiendo en el archivo **Vagrantfile** la líneas necesarias para que coja los playbooks de ansible.
+
+	1. Abrimos nuestro archivo Vagrantfile, borramos todo el contenido y añadimos esto:
+
+        ~~~
+        VAGRANTFILE_API_VERSION = "2"
+        
+        Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+          config.vm.box = "debian-ansible"
+          config.vm.network :private_network, ip: "192.168.33.11"
+          
+          config.vm.provision "ansible" do |ansible|
+            ansible.playbook = "provisioning/playbook.yml"
+            ansible.inventory_path = "provisioning/ansible_hosts"
+          
+          end
+        end
+        ~~~
+        
+* Ahora creamos una carpeta llamada **provisioning** y dentro vamos a guardar el archivo **playbook.yml** con las tareas que deseamos que provisione Vagrant y el archivo **ansible_hosts**
+
+	* El archivo **playbook.yml** contendrá lo siguiente:
+        ---
+        - hosts: debian
+          sudo: yes
+          tasks:
+          - name: Actualizar
+            apt: update_cache=yes
+          - name: Instalar el servidor Nginx
+            apt: pkg=nginx state=present
+          - name: Arrancando el servidor NGINX
+            action: shell service nginx start
+
+
+* Y por último el archivo **ansible_hosts** que tan solo deberá tener la ip que hemos puesto en el archivo de configuración de Vagrantfile
+    
+    	[debian]
+        192.168.33.11
+
+* Ya podemos arrancar la máquina con:
+		
+        $ vagrant up
+        
+	![Lanzando la VM con Vagrant](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej8-1.LanzandoMaquina.png)
+    
+* y provisionarla con:
+
+		$ vagrant provision
+        
+   ![Aprovisionando la máquina](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej8-2.ProvisionandoVM.png)
+   
+   
+   Para acceder al servidor tan fácil como poner en el navegador la ip que le hemos asignado a la VM: **192.168.33.11**

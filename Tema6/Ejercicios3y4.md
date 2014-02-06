@@ -70,6 +70,7 @@ Para saber un poquito más sobre las características de YAML  y ver algunos eje
         Como podeéis ver, le he puesto antes una etiqueta entre corchetes (**[azure]**), esto sirve para poder referirnos a todos las máquinas a la vez que estén dentro de azure.
         
 3. **Exportamos** el archivo inventario a una variable **global** para que al ejecutar ansible recoja la información.
+
         $ export ANSIBLE_HOSTS=~/ansible_hosts
 
 4. Ahora vamos a configurar el acceso mediante ssh, para ello necesitamos enviar nuestra clave **ssh** a nuestros sistema remotos (*solo lo envío al app-conf2 porque es el único que está activo en azure*).

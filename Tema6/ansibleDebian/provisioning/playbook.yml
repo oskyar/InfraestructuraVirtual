@@ -1,0 +1,10 @@
+---
+- hosts: debian
+  sudo: yes
+  tasks:
+  - name: Actualizar
+    apt: update_cache=yes
+  - name: Instalar el servidor Nginx
+    apt: pkg=nginx state=present
+  - name: Arrancando el servidor NGINX
+    action: shell service nginx start
