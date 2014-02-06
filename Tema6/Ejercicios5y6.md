@@ -36,4 +36,9 @@
     ![Aprendiendo a usar ansible-playbook 2](https://raw.github.com/oskyar/InfraestructuraVirtual/master/Tema6/img/Ej5-2.UsandoPlaybook2.png)
     
 
+
+
+#####2. ¿Ansible o chef? -- > Contestado en el issue. [Ver](https://github.com/IV-GII/GII-2013/issues/131#issuecomment-34283523)
+
+
 ###[Ejercicios 7 y 8](https://github.com/oskyar/InfraestructuraVirtual/blob/master/Tema6/Ejercicios7y8.md)
